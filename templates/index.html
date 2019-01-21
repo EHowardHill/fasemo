@@ -31,16 +31,22 @@
             $(document).ready(function() {
 
                 $('#summernote').summernote({
+
+                    // On value change...
+                    callbacks: {
+                        onChange: function(contents, $editable) {
+                            document.getElementById("content").value = contents;
+                        }
+                    },
+
                     height: window.innerHeight - 125,
                     toolbar: [
-                        // [groupName, [list of button]]
                         ['style', ['bold', 'italic', 'clear']]
                     ]
                 });
 
                 $(window).on('resize', function(){
-                    var win = $(this); //this = window
-                    $('#summernote').summernote.height = window.innerHeight - 125;
+                    $('summernote').summernote.height = window.innerHeight - 125;
                 });
 
             });
@@ -54,8 +60,11 @@
                 <span class="navbar-brand mb-0 h1" style="font-size: 16px; font-weight: bolder;">TUSCANY</span>
                 <span class="navbar-brand mb-0 h1" style="font-size: 16px;">CHAPTER ONE</span>
                 <span style="width: 20%"></span>
-                <button type="button" class="btn btn-primary btn-sm">Save</button>
-                <button type="button" class="btn btn-secondary btn-sm">Discard</button>
+                <form action="{{ url_for('home') }}" method="POST">
+                    <input type="hidden" id="content">
+                    <input type="submit" class="btn btn-primary btn-sm" value="Submit">
+                    <input type="submit" class="btn btn-secondary btn-sm" value="Discard" formaction="/elsewhere">
+                </form>
             </nav>
 
             <!-- Summernote bit -->
