@@ -13,12 +13,10 @@
 
         <style>
 
-            @import url('https://fonts.googleapis.com/css?family=Crimson+Text');
-
             .note-editor .note-editable {
                 line-height: 1.2;
                 font-size: 18px;
-                font-family: 'Crimson Text', serif !important;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
             }
 
         </style>
@@ -34,9 +32,8 @@
                 $('#summernote').summernote({
                     height: window.innerHeight - 125,
                     toolbar: [
-                        ['font', ['bold', 'italic', 'underline', 'clear']]
-                    ],
-                    
+                        ['style', ['bold', 'italic', 'clear']]
+                    ]
                 });
 
                 $(window).on('resize', function () {
@@ -87,7 +84,7 @@
             </nav>
 
             <!-- Summernote bit -->
-            <div class="note-editor" id="summernote"><p>Hello Summernote</p></div>
+            <div id="summernote"><p>Hello Summernote</p></div>
 
         </div>
         
