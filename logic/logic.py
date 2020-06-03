@@ -6,14 +6,13 @@ from sqlalchemy import Column, Integer, String, DateTime
 application = Flask(__name__, template_folder='templates')
 application.secret_key = "welcome to the cheese house"          # Arbitrary, can be any string
 application.config['SESSION_TYPE'] = 'filesystem'
-application.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+mysqlconnector://app:Cheesehouse1470!!@localhost/fasemo?charset=utf8'
+application.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///fasemo.db'
 application.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(application)
 
 class Login(db.Model):
     __tablename__ = 'login'
-    id = Column(Integer, primary_key = True)
-    usern = Column(String(45))
+    usern = Column(String(45), primary_key = True)
     passw = Column(String(45))
 
 def start():
