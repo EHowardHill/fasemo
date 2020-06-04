@@ -48,12 +48,19 @@ class ComponentMessage extends React.Component {
 }
 
 function ConversationWindow(currentChat) {
+  let chat = null;
+
+  if (currentChat) {
+    chat = currentChat.map((pic) => {
+      return (
+        <ComponentMessage pic={pic.pic} text={pic.text}></ComponentMessage>
+      ) 
+   });
+  }
 
   return (
     <div className="rightPanel flexboxVert">
-      {
-
-      }
+      {chat}
     </div>
   );
 }
