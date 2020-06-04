@@ -1,0 +1,41 @@
+
+html, body, #mydiv { 
+  color: whitesmoke;
+}
+
+.flexboxVert {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.flexboxHorz {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  min-height: 100vh;
+}
+
+.message {
+  margin: 0px 0px 0px 0px;
+  padding: 5px 5px 5px 5px;
+  background-color: midnightblue;
+  height: 48px;
+  display: flex;
+  flex-direction: row;
+}
+
+.leftPanel {
+  width: 20vw;
+  background-color: black;
+}
+
+.rightPanel {
+  flex: 1;
+  background-color: cornflowerblue;
+}
+
+.profilePic {
+  width: 48px;
+  height: 48px;
+  margin-right: 5px;
+}
