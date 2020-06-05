@@ -1,11 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Bentham&family=Fredoka+One&family=Playfair+Display:wght@600&display=swap');
 
-html, body, #mydiv { 
+.App { 
+  background-image: url("https://i.pinimg.com/564x/5f/07/a0/5f07a0eee4e5746f1aead424459518cc.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   color: whitesmoke;
+  font-family: 'Playfair Display', serif;
+}
+
+.inFront {
+  z-index: 1;
 }
 
 .flexboxVert {
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
+  max-height: 100vh;
+}
+
+.flexboxVertContent {
+  overflow-y: auto;
+  scroll-snap-type: y mandatory;
+  flex: 1;
 }
 
 .flexboxHorz {
@@ -13,12 +31,34 @@ html, body, #mydiv {
   flex-direction: row;
   height: 100%;
   min-height: 100vh;
+  backdrop-filter: blur(2px);
+}
+
+.thread {
+  margin: 0px 0px 0px 0px;
+  padding: 5px 5px 5px 5px;
+  color: whitesmoke;
+  font-weight: bolder;
+  vertical-align: middle;
+  min-height: 36px;
+  display: flex;
+  flex-direction: row;
 }
 
 .message {
   margin: 0px 0px 0px 0px;
   padding: 5px 5px 5px 5px;
-  background-color: midnightblue;
+  color: whitesmoke;
+  min-height: 36px;
+  display: flex;
+  flex-direction: row;
+  text-shadow: 2px 2px #000000;
+}
+
+.inputBox {
+  margin: 0px 0px 0px 0px;
+  padding: 5px 5px 5px 5px;
+  background-color: black;
   height: 48px;
   display: flex;
   flex-direction: row;
@@ -26,16 +66,21 @@ html, body, #mydiv {
 
 .leftPanel {
   width: 20vw;
-  background-color: black;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(8px);
+  box-shadow: 2px 2px 12px #000000;
 }
 
 .rightPanel {
   flex: 1;
-  background-color: cornflowerblue;
 }
 
 .profilePic {
-  width: 48px;
-  height: 48px;
+  width: 32px;
+  height: 32px;
   margin-right: 5px;
+}
+
+.messageInput {
+  width: 100%;
 }

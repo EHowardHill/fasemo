@@ -43,5 +43,5 @@ class Messages(db.Model):
     alias = Column(Integer, ForeignKey('alias.id'))
     thread = Column(Integer, ForeignKey('thread.id'))
     content = Column(String)
-    timestamp = Column(DateTime)
+    timestamp = Column(String)
     edit = Column(Boolean)
