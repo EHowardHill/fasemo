@@ -14,6 +14,35 @@
   z-index: 1;
 }
 
+.centerContent {
+  box-shadow: 2px 2px 12px #ffffff;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.frontPanel {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(8px);
+  transition: all 0.75s;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.onScreen {
+  top: 0vh;
+  animation: moveFirst 5s linear .2s;
+  animation-iteration-count: 1;
+}
+
+.offScreenTop {
+  top: -100vh;
+  animation: moveFirst 5s linear .2s;
+}
+
 .flexboxVert {
   display: flex;
   flex-direction: column;

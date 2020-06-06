@@ -1,0 +1,391 @@
+2020-06-05 23:07:22,593 - Server initialized for threading.
+2020-06-05 23:07:22,608 -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-06-05 23:07:22,847 - Invalid session 7b1dfd107dd640bc95b5e92e5bfab435
+2020-06-05 23:07:22,848 - 127.0.0.1 - - [05/Jun/2020 23:07:22] "[31m[1mPOST /socket.io/?EIO=3&transport=polling&t=NA7pyeU&sid=7b1dfd107dd640bc95b5e92e5bfab435 HTTP/1.1[0m" 400 -
+2020-06-05 23:07:22,888 - Invalid session 7bd025c4e414496eb0127dc8c1651c13
+2020-06-05 23:07:22,889 - 127.0.0.1 - - [05/Jun/2020 23:07:22] "[31m[1mPOST /socket.io/?EIO=3&transport=polling&t=NA7pyeZ&sid=7bd025c4e414496eb0127dc8c1651c13 HTTP/1.1[0m" 400 -
+2020-06-05 23:07:22,919 - 9a75e61da11f4500881feeadb63870f2: Sending packet OPEN data {'sid': '9a75e61da11f4500881feeadb63870f2', 'upgrades': [], 'pingTimeout': 60000, 'pingInterval': 25000}
+2020-06-05 23:07:22,919 - 9a75e61da11f4500881feeadb63870f2: Sending packet MESSAGE data 0
+2020-06-05 23:07:22,920 - 328899e58a08464db115ec8e176cdcec: Sending packet OPEN data {'sid': '328899e58a08464db115ec8e176cdcec', 'upgrades': [], 'pingTimeout': 60000, 'pingInterval': 25000}
+2020-06-05 23:07:22,921 - 127.0.0.1 - - [05/Jun/2020 23:07:22] "[37mGET /socket.io/?EIO=3&transport=polling&t=NA7py_J HTTP/1.1[0m" 200 -
+2020-06-05 23:07:22,921 - 328899e58a08464db115ec8e176cdcec: Sending packet MESSAGE data 0
+2020-06-05 23:07:22,922 - 127.0.0.1 - - [05/Jun/2020 23:07:22] "[37mGET /socket.io/?EIO=3&transport=polling&t=NA7pyu3 HTTP/1.1[0m" 200 -
+2020-06-05 23:07:23,583 - 636123b0e43b458faf9fd9c0aaddfb80: Sending packet OPEN data {'sid': '636123b0e43b458faf9fd9c0aaddfb80', 'upgrades': [], 'pingTimeout': 60000, 'pingInterval': 25000}
+2020-06-05 23:07:23,583 - 636123b0e43b458faf9fd9c0aaddfb80: Sending packet MESSAGE data 0
+2020-06-05 23:07:23,584 - 127.0.0.1 - - [05/Jun/2020 23:07:23] "[37mGET /socket.io/?EIO=3&transport=polling&t=NA7pzAY HTTP/1.1[0m" 200 -
+2020-06-05 23:07:23,585 - 866f51d878524decbe4e7d03f01d3392: Sending packet OPEN data {'sid': '866f51d878524decbe4e7d03f01d3392', 'upgrades': [], 'pingTimeout': 60000, 'pingInterval': 25000}
+2020-06-05 23:07:23,585 - 866f51d878524decbe4e7d03f01d3392: Sending packet MESSAGE data 0
+2020-06-05 23:07:23,586 - 127.0.0.1 - - [05/Jun/2020 23:07:23] "[37mGET /socket.io/?EIO=3&transport=polling&t=NA7pzAa HTTP/1.1[0m" 200 -
+2020-06-05 23:07:23,591 - 127.0.0.1 - - [05/Jun/2020 23:07:23] "[37mPOST /connect HTTP/1.1[0m" 200 -
+2020-06-05 23:07:48,638 - 636123b0e43b458faf9fd9c0aaddfb80: Received packet PING data None
+2020-06-05 23:07:48,639 - 636123b0e43b458faf9fd9c0aaddfb80: Sending packet PONG data None
+2020-06-05 23:07:48,640 - 866f51d878524decbe4e7d03f01d3392: Received packet PING data None
+2020-06-05 23:07:48,641 - 127.0.0.1 - - [05/Jun/2020 23:07:48] "[37mGET /socket.io/?EIO=3&transport=polling&t=NA7pzBJ&sid=636123b0e43b458faf9fd9c0aaddfb80 HTTP/1.1[0m" 200 -
+2020-06-05 23:07:48,641 - 127.0.0.1 - - [05/Jun/2020 23:07:48] "[37mPOST /socket.io/?EIO=3&transport=polling&t=NA7q3IF&sid=636123b0e43b458faf9fd9c0aaddfb80 HTTP/1.1[0m" 200 -
+2020-06-05 23:07:48,641 - 866f51d878524decbe4e7d03f01d3392: Sending packet PONG data None
+2020-06-05 23:07:48,642 - 127.0.0.1 - - [05/Jun/2020 23:07:48] "[37mGET /socket.io/?EIO=3&transport=polling&t=NA7pzBP&sid=866f51d878524decbe4e7d03f01d3392 HTTP/1.1[0m" 200 -
+2020-06-05 23:07:48,643 - 127.0.0.1 - - [05/Jun/2020 23:07:48] "[37mPOST /socket.io/?EIO=3&transport=polling&t=NA7q3IJ&sid=866f51d878524decbe4e7d03f01d3392 HTTP/1.1[0m" 200 -
+2020-06-05 23:07:56,411 - 8ea0366436b34b4a94354ba86a2ec71a: Sending packet OPEN data {'sid': '8ea0366436b34b4a94354ba86a2ec71a', 'upgrades': [], 'pingTimeout': 60000, 'pingInterval': 25000}
+2020-06-05 23:07:56,412 - 8ea0366436b34b4a94354ba86a2ec71a: Sending packet MESSAGE data 0
+2020-06-05 23:07:56,413 - 127.0.0.1 - - [05/Jun/2020 23:07:56] "[37mGET /socket.io/?EIO=3&transport=polling&t=NA7q5BY HTTP/1.1[0m" 200 -
+2020-06-05 23:07:56,414 - 37baa3ca965d4892a113e7e96888a062: Sending packet OPEN data {'sid': '37baa3ca965d4892a113e7e96888a062', 'upgrades': [], 'pingTimeout': 60000, 'pingInterval': 25000}
+2020-06-05 23:07:56,414 - 37baa3ca965d4892a113e7e96888a062: Sending packet MESSAGE data 0
+2020-06-05 23:07:56,415 - 127.0.0.1 - - [05/Jun/2020 23:07:56] "[37mGET /socket.io/?EIO=3&transport=polling&t=NA7q5Ba HTTP/1.1[0m" 200 -
+2020-06-05 23:07:56,425 - 127.0.0.1 - - [05/Jun/2020 23:07:56] "[37mPOST /connect HTTP/1.1[0m" 200 -
+2020-06-05 23:07:56,457 - 11b43f504cb44a7191916aaf4758103e: Sending packet OPEN data {'sid': '11b43f504cb44a7191916aaf4758103e', 'upgrades': [], 'pingTimeout': 60000, 'pingInterval': 25000}
+2020-06-05 23:07:56,458 - 11b43f504cb44a7191916aaf4758103e: Sending packet MESSAGE data 0
+2020-06-05 23:07:56,458 - 127.0.0.1 - - [05/Jun/2020 23:07:56] "[37mGET /socket.io/?EIO=3&transport=polling&t=NA7q5CM HTTP/1.1[0m" 200 -
+2020-06-05 23:07:56,462 - eed4cfd40faf420c9b44e42e57a5d161: Sending packet OPEN data {'sid': 'eed4cfd40faf420c9b44e42e57a5d161', 'upgrades': [], 'pingTimeout': 60000, 'pingInterval': 25000}
+2020-06-05 23:07:56,463 - eed4cfd40faf420c9b44e42e57a5d161: Sending packet MESSAGE data 0
+2020-06-05 23:07:56,463 - 127.0.0.1 - - [05/Jun/2020 23:07:56] "[37mGET /socket.io/?EIO=3&transport=polling&t=NA7q5CO HTTP/1.1[0m" 200 -
+2020-06-05 23:07:56,465 - e04b3ae42a0a49c88d73fef28c8020a0: Sending packet OPEN data {'sid': 'e04b3ae42a0a49c88d73fef28c8020a0', 'upgrades': [], 'pingTimeout': 60000, 'pingInterval': 25000}
+2020-06-05 23:07:56,466 - e04b3ae42a0a49c88d73fef28c8020a0: Sending packet MESSAGE data 0
+2020-06-05 23:07:56,467 - 127.0.0.1 - - [05/Jun/2020 23:07:56] "[37mGET /socket.io/?EIO=3&transport=polling&t=NA7q5CS HTTP/1.1[0m" 200 -
+2020-06-05 23:07:56,467 - c596d41361db49c2899620b8304b8983: Sending packet OPEN data {'sid': 'c596d41361db49c2899620b8304b8983', 'upgrades': [], 'pingTimeout': 60000, 'pingInterval': 25000}
+2020-06-05 23:07:56,468 - c596d41361db49c2899620b8304b8983: Sending packet MESSAGE data 0
+2020-06-05 23:07:56,469 - 127.0.0.1 - - [05/Jun/2020 23:07:56] "[37mGET /socket.io/?EIO=3&transport=polling&t=NA7q5CT HTTP/1.1[0m" 200 -
+2020-06-05 23:07:56,470 - 363ad4cb389e4fedab2747d499a0be5a: Sending packet OPEN data {'sid': '363ad4cb389e4fedab2747d499a0be5a', 'upgrades': [], 'pingTimeout': 60000, 'pingInterval': 25000}
+2020-06-05 23:07:56,471 - 363ad4cb389e4fedab2747d499a0be5a: Sending packet MESSAGE data 0
+2020-06-05 23:07:56,471 - 127.0.0.1 - - [05/Jun/2020 23:07:56] "[37mGET /socket.io/?EIO=3&transport=polling&t=NA7q5CV HTTP/1.1[0m" 200 -
+2020-06-05 23:07:56,472 - eee67307c790459fa5c7e68dfd1d7659: Sending packet OPEN data {'sid': 'eee67307c790459fa5c7e68dfd1d7659', 'upgrades': [], 'pingTimeout': 60000, 'pingInterval': 25000}
+2020-06-05 23:07:56,473 - eee67307c790459fa5c7e68dfd1d7659: Sending packet MESSAGE data 0
+2020-06-05 23:07:56,474 - 127.0.0.1 - - [05/Jun/2020 23:07:56] "[37mGET /socket.io/?EIO=3&transport=polling&t=NA7q5CW HTTP/1.1[0m" 200 -
+2020-06-05 23:08:22,923 - 9a75e61da11f4500881feeadb63870f2: Client is gone, closing socket
+2020-06-05 23:08:22,923 - 9a75e61da11f4500881feeadb63870f2: Client is gone, closing socket
+2020-06-05 23:08:22,924 - 127.0.0.1 - - [05/Jun/2020 23:08:22] "[37mGET /socket.io/?EIO=3&transport=polling&t=NA7pz1T&sid=9a75e61da11f4500881feeadb63870f2 HTTP/1.1[0m" 200 -
+2020-06-05 23:08:23,001 - 328899e58a08464db115ec8e176cdcec: Client is gone, closing socket
+2020-06-05 23:08:23,002 - 127.0.0.1 - - [05/Jun/2020 23:08:23] "[31m[1mGET /socket.io/?EIO=3&transport=polling&t=NA7pz1X&sid=328899e58a08464db115ec8e176cdcec HTTP/1.1[0m" 400 -
+2020-06-05 23:08:32,932 - 636123b0e43b458faf9fd9c0aaddfb80: Client is gone, closing socket
+2020-06-05 23:08:32,932 - 636123b0e43b458faf9fd9c0aaddfb80: Client is gone, closing socket
+2020-06-05 23:08:32,933 - 127.0.0.1 - - [05/Jun/2020 23:08:32] "[37mGET /socket.io/?EIO=3&transport=polling&t=NA7q3Ik&sid=636123b0e43b458faf9fd9c0aaddfb80 HTTP/1.1[0m" 200 -
+2020-06-05 23:08:37,933 - 866f51d878524decbe4e7d03f01d3392: Client is gone, closing socket
+2020-06-05 23:08:37,933 - 866f51d878524decbe4e7d03f01d3392: Client is gone, closing socket
+2020-06-05 23:08:37,934 - 127.0.0.1 - - [05/Jun/2020 23:08:37] "[37mGET /socket.io/?EIO=3&transport=polling&t=NA7q3Io&sid=866f51d878524decbe4e7d03f01d3392 HTTP/1.1[0m" 200 -
+2020-06-05 23:08:42,948 - 8ea0366436b34b4a94354ba86a2ec71a: Client is gone, closing socket
+2020-06-05 23:08:42,948 - 8ea0366436b34b4a94354ba86a2ec71a: Client is gone, closing socket
+2020-06-05 23:08:42,949 - 127.0.0.1 - - [05/Jun/2020 23:08:42] "[37mGET /socket.io/?EIO=3&transport=polling&t=NA7q5CI&sid=8ea0366436b34b4a94354ba86a2ec71a HTTP/1.1[0m" 200 -
+2020-06-05 23:08:47,949 - 37baa3ca965d4892a113e7e96888a062: Client is gone, closing socket
+2020-06-05 23:08:47,949 - 37baa3ca965d4892a113e7e96888a062: Client is gone, closing socket
+2020-06-05 23:08:47,950 - 127.0.0.1 - - [05/Jun/2020 23:08:47] "[37mGET /socket.io/?EIO=3&transport=polling&t=NA7q5Cj&sid=37baa3ca965d4892a113e7e96888a062 HTTP/1.1[0m" 200 -
+2020-06-05 23:08:50,422 - 57e26e140c0f40b09091a4d300b86dbe: Sending packet OPEN data {'sid': '57e26e140c0f40b09091a4d300b86dbe', 'upgrades': [], 'pingTimeout': 60000, 'pingInterval': 25000}
+2020-06-05 23:08:50,422 - 57e26e140c0f40b09091a4d300b86dbe: Sending packet MESSAGE data 0
+2020-06-05 23:08:50,423 - 127.0.0.1 - - [05/Jun/2020 23:08:50] "[37mGET /socket.io/?EIO=3&transport=polling&t=NA7qINL HTTP/1.1[0m" 200 -
+2020-06-05 23:08:50,424 - 4dd0c886bfd34282bb10307ccd4e6fa8: Sending packet OPEN data {'sid': '4dd0c886bfd34282bb10307ccd4e6fa8', 'upgrades': [], 'pingTimeout': 60000, 'pingInterval': 25000}
+2020-06-05 23:08:50,424 - 4dd0c886bfd34282bb10307ccd4e6fa8: Sending packet MESSAGE data 0
+2020-06-05 23:08:50,425 - 127.0.0.1 - - [05/Jun/2020 23:08:50] "[37mGET /socket.io/?EIO=3&transport=polling&t=NA7qINR HTTP/1.1[0m" 200 -
+2020-06-05 23:08:50,458 - 127.0.0.1 - - [05/Jun/2020 23:08:50] "[37mPOST /connect HTTP/1.1[0m" 200 -
+2020-06-05 23:08:50,487 - 826951266037451e8df48d9568d32b39: Sending packet OPEN data {'sid': '826951266037451e8df48d9568d32b39', 'upgrades': [], 'pingTimeout': 60000, 'pingInterval': 25000}
+2020-06-05 23:08:50,487 - 826951266037451e8df48d9568d32b39: Sending packet MESSAGE data 0
+2020-06-05 23:08:50,488 - 127.0.0.1 - - [05/Jun/2020 23:08:50] "[37mGET /socket.io/?EIO=3&transport=polling&t=NA7qIOm HTTP/1.1[0m" 200 -
+2020-06-05 23:08:50,495 - dc9b34b7981d4d81924ebc0450e38e70: Sending packet OPEN data {'sid': 'dc9b34b7981d4d81924ebc0450e38e70', 'upgrades': [], 'pingTimeout': 60000, 'pingInterval': 25000}
+2020-06-05 23:08:50,495 - dc9b34b7981d4d81924ebc0450e38e70: Sending packet MESSAGE data 0
+2020-06-05 23:08:50,496 - 127.0.0.1 - - [05/Jun/2020 23:08:50] "[37mGET /socket.io/?EIO=3&transport=polling&t=NA7qIOq HTTP/1.1[0m" 200 -
+2020-06-05 23:08:50,501 - 6c0644a3235a4bad9a5c1107f6b6c359: Sending packet OPEN data {'sid': '6c0644a3235a4bad9a5c1107f6b6c359', 'upgrades': [], 'pingTimeout': 60000, 'pingInterval': 25000}
+2020-06-05 23:08:50,502 - 6c0644a3235a4bad9a5c1107f6b6c359: Sending packet MESSAGE data 0
+2020-06-05 23:08:50,502 - 127.0.0.1 - - [05/Jun/2020 23:08:50] "[37mGET /socket.io/?EIO=3&transport=polling&t=NA7qIOx HTTP/1.1[0m" 200 -
+2020-06-05 23:08:50,506 - 1d1d87f1d0bd4c3e9ce80c1ab94119c3: Sending packet OPEN data {'sid': '1d1d87f1d0bd4c3e9ce80c1ab94119c3', 'upgrades': [], 'pingTimeout': 60000, 'pingInterval': 25000}
+2020-06-05 23:08:50,507 - 1d1d87f1d0bd4c3e9ce80c1ab94119c3: Sending packet MESSAGE data 0
+2020-06-05 23:08:50,507 - 127.0.0.1 - - [05/Jun/2020 23:08:50] "[37mGET /socket.io/?EIO=3&transport=polling&t=NA7qIOx.0 HTTP/1.1[0m" 200 -
+2020-06-05 23:08:50,509 - efe41bce6a3d4f9d9b54ebb8acd7e898: Sending packet OPEN data {'sid': 'efe41bce6a3d4f9d9b54ebb8acd7e898', 'upgrades': [], 'pingTimeout': 60000, 'pingInterval': 25000}
+2020-06-05 23:08:50,509 - efe41bce6a3d4f9d9b54ebb8acd7e898: Sending packet MESSAGE data 0
+2020-06-05 23:08:50,510 - 127.0.0.1 - - [05/Jun/2020 23:08:50] "[37mGET /socket.io/?EIO=3&transport=polling&t=NA7qIO_ HTTP/1.1[0m" 200 -
+2020-06-05 23:08:50,510 - 1a6b9f038140438da909990122ab488a: Sending packet OPEN data {'sid': '1a6b9f038140438da909990122ab488a', 'upgrades': [], 'pingTimeout': 60000, 'pingInterval': 25000}
+2020-06-05 23:08:50,511 - 1a6b9f038140438da909990122ab488a: Sending packet MESSAGE data 0
+2020-06-05 23:08:50,512 - 127.0.0.1 - - [05/Jun/2020 23:08:50] "[37mGET /socket.io/?EIO=3&transport=polling&t=NA7qIP0 HTTP/1.1[0m" 200 -
+2020-06-05 23:08:52,962 - 11b43f504cb44a7191916aaf4758103e: Client is gone, closing socket
+2020-06-05 23:08:52,962 - 11b43f504cb44a7191916aaf4758103e: Client is gone, closing socket
+2020-06-05 23:08:52,963 - 127.0.0.1 - - [05/Jun/2020 23:08:52] "[37mGET /socket.io/?EIO=3&transport=polling&t=NA7q5Co&sid=11b43f504cb44a7191916aaf4758103e HTTP/1.1[0m" 200 -
+2020-06-05 23:08:53,800 - 673a1682d571429f9d093a17312cc79c: Sending packet OPEN data {'sid': '673a1682d571429f9d093a17312cc79c', 'upgrades': [], 'pingTimeout': 60000, 'pingInterval': 25000}
+2020-06-05 23:08:53,800 - 673a1682d571429f9d093a17312cc79c: Sending packet MESSAGE data 0
+2020-06-05 23:08:53,801 - 127.0.0.1 - - [05/Jun/2020 23:08:53] "[37mGET /socket.io/?EIO=3&transport=polling&t=NA7qJCV HTTP/1.1[0m" 200 -
+2020-06-05 23:08:53,802 - 5d584acece8b45659fab9cc0b714b8b9: Sending packet OPEN data {'sid': '5d584acece8b45659fab9cc0b714b8b9', 'upgrades': [], 'pingTimeout': 60000, 'pingInterval': 25000}
+2020-06-05 23:08:53,802 - 5d584acece8b45659fab9cc0b714b8b9: Sending packet MESSAGE data 0
+2020-06-05 23:08:53,803 - 127.0.0.1 - - [05/Jun/2020 23:08:53] "[37mGET /socket.io/?EIO=3&transport=polling&t=NA7qJCZ HTTP/1.1[0m" 200 -
+2020-06-05 23:08:53,853 - 127.0.0.1 - - [05/Jun/2020 23:08:53] "[37mPOST /connect HTTP/1.1[0m" 200 -
+2020-06-05 23:08:53,886 - 08e2f71528ae4d2d9724248353e22ca0: Sending packet OPEN data {'sid': '08e2f71528ae4d2d9724248353e22ca0', 'upgrades': [], 'pingTimeout': 60000, 'pingInterval': 25000}
+2020-06-05 23:08:53,886 - 08e2f71528ae4d2d9724248353e22ca0: Sending packet MESSAGE data 0
+2020-06-05 23:08:53,887 - 127.0.0.1 - - [05/Jun/2020 23:08:53] "[37mGET /socket.io/?EIO=3&transport=polling&t=NA7qJDs HTTP/1.1[0m" 200 -
+2020-06-05 23:08:53,890 - 89115d23782c48ff81ae3eb8d683bb15: Sending packet OPEN data {'sid': '89115d23782c48ff81ae3eb8d683bb15', 'upgrades': [], 'pingTimeout': 60000, 'pingInterval': 25000}
+2020-06-05 23:08:53,890 - 89115d23782c48ff81ae3eb8d683bb15: Sending packet MESSAGE data 0
+2020-06-05 23:08:53,891 - 127.0.0.1 - - [05/Jun/2020 23:08:53] "[37mGET /socket.io/?EIO=3&transport=polling&t=NA7qJDv HTTP/1.1[0m" 200 -
+2020-06-05 23:08:53,907 - d15c26d9b6184e3c929aff780ff8010f: Sending packet OPEN data {'sid': 'd15c26d9b6184e3c929aff780ff8010f', 'upgrades': [], 'pingTimeout': 60000, 'pingInterval': 25000}
+2020-06-05 23:08:53,907 - d15c26d9b6184e3c929aff780ff8010f: Sending packet MESSAGE data 0
+2020-06-05 23:08:53,908 - 127.0.0.1 - - [05/Jun/2020 23:08:53] "[37mGET /socket.io/?EIO=3&transport=polling&t=NA7qJE1 HTTP/1.1[0m" 200 -
+2020-06-05 23:08:53,911 - 195e8ba57eeb44eeb0bbce9b0fe20799: Sending packet OPEN data {'sid': '195e8ba57eeb44eeb0bbce9b0fe20799', 'upgrades': [], 'pingTimeout': 60000, 'pingInterval': 25000}
+2020-06-05 23:08:53,911 - 195e8ba57eeb44eeb0bbce9b0fe20799: Sending packet MESSAGE data 0
+2020-06-05 23:08:53,912 - 127.0.0.1 - - [05/Jun/2020 23:08:53] "[37mGET /socket.io/?EIO=3&transport=polling&t=NA7qJE2 HTTP/1.1[0m" 200 -
+2020-06-05 23:08:53,919 - 28ef6daf16fa4b96ab89acdda29cf789: Sending packet OPEN data {'sid': '28ef6daf16fa4b96ab89acdda29cf789', 'upgrades': [], 'pingTimeout': 60000, 'pingInterval': 25000}
+2020-06-05 23:08:53,920 - 28ef6daf16fa4b96ab89acdda29cf789: Sending packet MESSAGE data 0
+2020-06-05 23:08:53,920 - 127.0.0.1 - - [05/Jun/2020 23:08:53] "[37mGET /socket.io/?EIO=3&transport=polling&t=NA7qJE6 HTTP/1.1[0m" 200 -
+2020-06-05 23:08:53,922 - 6da9de8aab2240a5b9a708960b8d0913: Sending packet OPEN data {'sid': '6da9de8aab2240a5b9a708960b8d0913', 'upgrades': [], 'pingTimeout': 60000, 'pingInterval': 25000}
+2020-06-05 23:08:53,923 - 6da9de8aab2240a5b9a708960b8d0913: Sending packet MESSAGE data 0
+2020-06-05 23:08:53,924 - 127.0.0.1 - - [05/Jun/2020 23:08:53] "[37mGET /socket.io/?EIO=3&transport=polling&t=NA7qJE7 HTTP/1.1[0m" 200 -
+2020-06-05 23:08:56,488 - e04b3ae42a0a49c88d73fef28c8020a0: Client is gone, closing socket
+2020-06-05 23:08:56,488 - eed4cfd40faf420c9b44e42e57a5d161: Client is gone, closing socket
+2020-06-05 23:08:56,489 - 127.0.0.1 - - [05/Jun/2020 23:08:56] "[31m[1mGET /socket.io/?EIO=3&transport=polling&t=NA7q5Cy&sid=e04b3ae42a0a49c88d73fef28c8020a0 HTTP/1.1[0m" 400 -
+2020-06-05 23:08:56,489 - 127.0.0.1 - - [05/Jun/2020 23:08:56] "[31m[1mGET /socket.io/?EIO=3&transport=polling&t=NA7q5Cu&sid=eed4cfd40faf420c9b44e42e57a5d161 HTTP/1.1[0m" 400 -
+2020-06-05 23:08:56,504 - c596d41361db49c2899620b8304b8983: Client is gone, closing socket
+2020-06-05 23:08:56,504 - 127.0.0.1 - - [05/Jun/2020 23:08:56] "[31m[1mGET /socket.io/?EIO=3&transport=polling&t=NA7q5D5&sid=c596d41361db49c2899620b8304b8983 HTTP/1.1[0m" 400 -
+2020-06-05 23:09:02,220 - d9487f71372642ca94f01937a222dc00: Sending packet OPEN data {'sid': 'd9487f71372642ca94f01937a222dc00', 'upgrades': [], 'pingTimeout': 60000, 'pingInterval': 25000}
+2020-06-05 23:09:02,220 - d9487f71372642ca94f01937a222dc00: Sending packet MESSAGE data 0
+2020-06-05 23:09:02,220 - 127.0.0.1 - - [05/Jun/2020 23:09:02] "[37mGET /socket.io/?EIO=3&transport=polling&t=NA7qLG6 HTTP/1.1[0m" 200 -
+2020-06-05 23:09:02,230 - 47753edc544e49acb4b65dc97cbd98be: Sending packet OPEN data {'sid': '47753edc544e49acb4b65dc97cbd98be', 'upgrades': [], 'pingTimeout': 60000, 'pingInterval': 25000}
+2020-06-05 23:09:02,231 - 47753edc544e49acb4b65dc97cbd98be: Sending packet MESSAGE data 0
+2020-06-05 23:09:02,231 - 127.0.0.1 - - [05/Jun/2020 23:09:02] "[37mGET /socket.io/?EIO=3&transport=polling&t=NA7qLGG HTTP/1.1[0m" 200 -
+2020-06-05 23:09:02,293 - 127.0.0.1 - - [05/Jun/2020 23:09:02] "[37mPOST /connect HTTP/1.1[0m" 200 -
+2020-06-05 23:09:02,317 - d9ffaaa255d84fabb19eb9e0ea33b540: Sending packet OPEN data {'sid': 'd9ffaaa255d84fabb19eb9e0ea33b540', 'upgrades': [], 'pingTimeout': 60000, 'pingInterval': 25000}
+2020-06-05 23:09:02,317 - d9ffaaa255d84fabb19eb9e0ea33b540: Sending packet MESSAGE data 0
+2020-06-05 23:09:02,318 - 127.0.0.1 - - [05/Jun/2020 23:09:02] "[37mGET /socket.io/?EIO=3&transport=polling&t=NA7qLHY HTTP/1.1[0m" 200 -
+2020-06-05 23:09:02,319 - 4bb25d8376ea49d0a063fb9c8ae7da41: Sending packet OPEN data {'sid': '4bb25d8376ea49d0a063fb9c8ae7da41', 'upgrades': [], 'pingTimeout': 60000, 'pingInterval': 25000}
+2020-06-05 23:09:02,320 - 4bb25d8376ea49d0a063fb9c8ae7da41: Sending packet MESSAGE data 0
+2020-06-05 23:09:02,320 - 127.0.0.1 - - [05/Jun/2020 23:09:02] "[37mGET /socket.io/?EIO=3&transport=polling&t=NA7qLHZ HTTP/1.1[0m" 200 -
+2020-06-05 23:09:02,324 - 06c0108467384aaf8e8f56be6dc45c11: Sending packet OPEN data {'sid': '06c0108467384aaf8e8f56be6dc45c11', 'upgrades': [], 'pingTimeout': 60000, 'pingInterval': 25000}
+2020-06-05 23:09:02,324 - 06c0108467384aaf8e8f56be6dc45c11: Sending packet MESSAGE data 0
+2020-06-05 23:09:02,325 - 127.0.0.1 - - [05/Jun/2020 23:09:02] "[37mGET /socket.io/?EIO=3&transport=polling&t=NA7qLHd HTTP/1.1[0m" 200 -
+2020-06-05 23:09:02,327 - 623c664d4db84d4ba87dcbde35e041b1: Sending packet OPEN data {'sid': '623c664d4db84d4ba87dcbde35e041b1', 'upgrades': [], 'pingTimeout': 60000, 'pingInterval': 25000}
+2020-06-05 23:09:02,327 - 623c664d4db84d4ba87dcbde35e041b1: Sending packet MESSAGE data 0
+2020-06-05 23:09:02,328 - 51c9358ba3084a5ead97dbd123475c7c: Sending packet OPEN data {'sid': '51c9358ba3084a5ead97dbd123475c7c', 'upgrades': [], 'pingTimeout': 60000, 'pingInterval': 25000}
+2020-06-05 23:09:02,329 - 127.0.0.1 - - [05/Jun/2020 23:09:02] "[37mGET /socket.io/?EIO=3&transport=polling&t=NA7qLHe HTTP/1.1[0m" 200 -
+2020-06-05 23:09:02,329 - 51c9358ba3084a5ead97dbd123475c7c: Sending packet MESSAGE data 0
+2020-06-05 23:09:02,330 - 127.0.0.1 - - [05/Jun/2020 23:09:02] "[37mGET /socket.io/?EIO=3&transport=polling&t=NA7qLHh HTTP/1.1[0m" 200 -
+2020-06-05 23:09:02,411 - c290bea149f24a44812860ea850f9721: Sending packet OPEN data {'sid': 'c290bea149f24a44812860ea850f9721', 'upgrades': [], 'pingTimeout': 60000, 'pingInterval': 25000}
+2020-06-05 23:09:02,411 - c290bea149f24a44812860ea850f9721: Sending packet MESSAGE data 0
+2020-06-05 23:09:02,412 - 127.0.0.1 - - [05/Jun/2020 23:09:02] "[37mGET /socket.io/?EIO=3&transport=polling&t=NA7qLHi HTTP/1.1[0m" 200 -
+2020-06-05 23:09:12,989 - 363ad4cb389e4fedab2747d499a0be5a: Client is gone, closing socket
+2020-06-05 23:09:12,989 - 363ad4cb389e4fedab2747d499a0be5a: Client is gone, closing socket
+2020-06-05 23:09:12,990 - 127.0.0.1 - - [05/Jun/2020 23:09:12] "[37mGET /socket.io/?EIO=3&transport=polling&t=NA7q5D8&sid=363ad4cb389e4fedab2747d499a0be5a HTTP/1.1[0m" 200 -
+2020-06-05 23:09:17,992 - eee67307c790459fa5c7e68dfd1d7659: Client is gone, closing socket
+2020-06-05 23:09:17,992 - eee67307c790459fa5c7e68dfd1d7659: Client is gone, closing socket
+2020-06-05 23:09:17,993 - 127.0.0.1 - - [05/Jun/2020 23:09:17] "[37mGET /socket.io/?EIO=3&transport=polling&t=NA7q5DB&sid=eee67307c790459fa5c7e68dfd1d7659 HTTP/1.1[0m" 200 -
+2020-06-05 23:09:23,001 - 57e26e140c0f40b09091a4d300b86dbe: Client is gone, closing socket
+2020-06-05 23:09:23,001 - 57e26e140c0f40b09091a4d300b86dbe: Client is gone, closing socket
+2020-06-05 23:09:23,002 - 127.0.0.1 - - [05/Jun/2020 23:09:23] "[37mGET /socket.io/?EIO=3&transport=polling&t=NA7qIOg&sid=57e26e140c0f40b09091a4d300b86dbe HTTP/1.1[0m" 200 -
+2020-06-05 23:09:25,510 - 4dd0c886bfd34282bb10307ccd4e6fa8: Client is gone, closing socket
+2020-06-05 23:09:25,510 - 4dd0c886bfd34282bb10307ccd4e6fa8: Client is gone, closing socket
+2020-06-05 23:09:25,511 - 127.0.0.1 - - [05/Jun/2020 23:09:25] "[37mGET /socket.io/?EIO=3&transport=polling&t=NA7qIP9&sid=4dd0c886bfd34282bb10307ccd4e6fa8 HTTP/1.1[0m" 200 -
+2020-06-05 23:09:26,452 - f026eae5bf1642e38c3e331ad35b2472: Sending packet OPEN data {'sid': 'f026eae5bf1642e38c3e331ad35b2472', 'upgrades': [], 'pingTimeout': 60000, 'pingInterval': 25000}
+2020-06-05 23:09:26,452 - f026eae5bf1642e38c3e331ad35b2472: Sending packet MESSAGE data 0
+2020-06-05 23:09:26,453 - 127.0.0.1 - - [05/Jun/2020 23:09:26] "[37mGET /socket.io/?EIO=3&transport=polling&t=NA7qRAi HTTP/1.1[0m" 200 -
+2020-06-05 23:09:26,454 - 30f3d2fba6f54f42aacbed8021adef2b: Sending packet OPEN data {'sid': '30f3d2fba6f54f42aacbed8021adef2b', 'upgrades': [], 'pingTimeout': 60000, 'pingInterval': 25000}
+2020-06-05 23:09:26,454 - 30f3d2fba6f54f42aacbed8021adef2b: Sending packet MESSAGE data 0
+2020-06-05 23:09:26,455 - 127.0.0.1 - - [05/Jun/2020 23:09:26] "[37mGET /socket.io/?EIO=3&transport=polling&t=NA7qRAl HTTP/1.1[0m" 200 -
+2020-06-05 23:09:26,511 - 127.0.0.1 - - [05/Jun/2020 23:09:26] "[37mPOST /connect HTTP/1.1[0m" 200 -
+2020-06-05 23:09:28,020 - 826951266037451e8df48d9568d32b39: Client is gone, closing socket
+2020-06-05 23:09:28,020 - 826951266037451e8df48d9568d32b39: Client is gone, closing socket
+2020-06-05 23:09:28,021 - 127.0.0.1 - - [05/Jun/2020 23:09:28] "[37mGET /socket.io/?EIO=3&transport=polling&t=NA7qIPD&sid=826951266037451e8df48d9568d32b39 HTTP/1.1[0m" 200 -
+2020-06-05 23:09:30,528 - dc9b34b7981d4d81924ebc0450e38e70: Client is gone, closing socket
+2020-06-05 23:09:30,528 - dc9b34b7981d4d81924ebc0450e38e70: Client is gone, closing socket
+2020-06-05 23:09:30,529 - 127.0.0.1 - - [05/Jun/2020 23:09:30] "[37mGET /socket.io/?EIO=3&transport=polling&t=NA7qIPG&sid=dc9b34b7981d4d81924ebc0450e38e70 HTTP/1.1[0m" 200 -
+2020-06-05 23:09:33,041 - 6c0644a3235a4bad9a5c1107f6b6c359: Client is gone, closing socket
+2020-06-05 23:09:33,041 - 6c0644a3235a4bad9a5c1107f6b6c359: Client is gone, closing socket
+2020-06-05 23:09:33,042 - 127.0.0.1 - - [05/Jun/2020 23:09:33] "[37mGET /socket.io/?EIO=3&transport=polling&t=NA7qIPH&sid=6c0644a3235a4bad9a5c1107f6b6c359 HTTP/1.1[0m" 200 -
+2020-06-05 23:09:34,003 - dd47be6e5bfa47a296d1fa4aad13ab93: Sending packet OPEN data {'sid': 'dd47be6e5bfa47a296d1fa4aad13ab93', 'upgrades': [], 'pingTimeout': 60000, 'pingInterval': 25000}
+2020-06-05 23:09:34,003 - dd47be6e5bfa47a296d1fa4aad13ab93: Sending packet MESSAGE data 0
+2020-06-05 23:09:34,004 - 127.0.0.1 - - [05/Jun/2020 23:09:34] "[37mGET /socket.io/?EIO=3&transport=polling&t=NA7qT0K HTTP/1.1[0m" 200 -
+2020-06-05 23:09:34,006 - 2b2f8c97568743b19945e9165475297f: Sending packet OPEN data {'sid': '2b2f8c97568743b19945e9165475297f', 'upgrades': [], 'pingTimeout': 60000, 'pingInterval': 25000}
+2020-06-05 23:09:34,006 - 2b2f8c97568743b19945e9165475297f: Sending packet MESSAGE data 0
+2020-06-05 23:09:34,007 - 127.0.0.1 - - [05/Jun/2020 23:09:34] "[37mGET /socket.io/?EIO=3&transport=polling&t=NA7qT0O HTTP/1.1[0m" 200 -
+2020-06-05 23:09:34,011 - 127.0.0.1 - - [05/Jun/2020 23:09:34] "[37mPOST /connect HTTP/1.1[0m" 200 -
+2020-06-05 23:09:35,544 - 1d1d87f1d0bd4c3e9ce80c1ab94119c3: Client is gone, closing socket
+2020-06-05 23:09:35,544 - 1d1d87f1d0bd4c3e9ce80c1ab94119c3: Client is gone, closing socket
+2020-06-05 23:09:35,545 - 127.0.0.1 - - [05/Jun/2020 23:09:35] "[37mGET /socket.io/?EIO=3&transport=polling&t=NA7qIPK&sid=1d1d87f1d0bd4c3e9ce80c1ab94119c3 HTTP/1.1[0m" 200 -
+2020-06-05 23:09:38,058 - efe41bce6a3d4f9d9b54ebb8acd7e898: Client is gone, closing socket
+2020-06-05 23:09:38,058 - efe41bce6a3d4f9d9b54ebb8acd7e898: Client is gone, closing socket
+2020-06-05 23:09:40,561 - 1a6b9f038140438da909990122ab488a: Client is gone, closing socket
+2020-06-05 23:09:40,561 - 1a6b9f038140438da909990122ab488a: Client is gone, closing socket
+2020-06-05 23:09:43,065 - 673a1682d571429f9d093a17312cc79c: Client is gone, closing socket
+2020-06-05 23:09:43,065 - 673a1682d571429f9d093a17312cc79c: Client is gone, closing socket
+2020-06-05 23:09:43,066 - 127.0.0.1 - - [05/Jun/2020 23:09:43] "[37mGET /socket.io/?EIO=3&transport=polling&t=NA7qJDh&sid=673a1682d571429f9d093a17312cc79c HTTP/1.1[0m" 200 -
+2020-06-05 23:09:45,572 - 5d584acece8b45659fab9cc0b714b8b9: Client is gone, closing socket
+2020-06-05 23:09:45,572 - 5d584acece8b45659fab9cc0b714b8b9: Client is gone, closing socket
+2020-06-05 23:09:45,573 - 127.0.0.1 - - [05/Jun/2020 23:09:45] "[37mGET /socket.io/?EIO=3&transport=polling&t=NA7qJEJ&sid=5d584acece8b45659fab9cc0b714b8b9 HTTP/1.1[0m" 200 -
+2020-06-05 23:09:45,609 - 393a70e820c34202ac607800474397b0: Sending packet OPEN data {'sid': '393a70e820c34202ac607800474397b0', 'upgrades': [], 'pingTimeout': 60000, 'pingInterval': 25000}
+2020-06-05 23:09:45,609 - 393a70e820c34202ac607800474397b0: Sending packet MESSAGE data 0
+2020-06-05 23:09:45,610 - 127.0.0.1 - - [05/Jun/2020 23:09:45] "[37mGET /socket.io/?EIO=3&transport=polling&t=NA7qVrd HTTP/1.1[0m" 200 -
+2020-06-05 23:09:45,612 - d1ff9e69c1be4e5ea3a62b3d252b11ea: Sending packet OPEN data {'sid': 'd1ff9e69c1be4e5ea3a62b3d252b11ea', 'upgrades': [], 'pingTimeout': 60000, 'pingInterval': 25000}
+2020-06-05 23:09:45,612 - d1ff9e69c1be4e5ea3a62b3d252b11ea: Sending packet MESSAGE data 0
+2020-06-05 23:09:45,613 - 127.0.0.1 - - [05/Jun/2020 23:09:45] "[37mGET /socket.io/?EIO=3&transport=polling&t=NA7qVrf HTTP/1.1[0m" 200 -
+2020-06-05 23:09:45,619 - 127.0.0.1 - - [05/Jun/2020 23:09:45] "[37mPOST /connect HTTP/1.1[0m" 200 -
+2020-06-05 23:09:48,087 - 08e2f71528ae4d2d9724248353e22ca0: Client is gone, closing socket
+2020-06-05 23:09:48,087 - 08e2f71528ae4d2d9724248353e22ca0: Client is gone, closing socket
+2020-06-05 23:09:48,088 - 127.0.0.1 - - [05/Jun/2020 23:09:48] "[37mGET /socket.io/?EIO=3&transport=polling&t=NA7qJEb&sid=08e2f71528ae4d2d9724248353e22ca0 HTTP/1.1[0m" 200 -
+2020-06-05 23:09:50,588 - 89115d23782c48ff81ae3eb8d683bb15: Client is gone, closing socket
+2020-06-05 23:09:50,588 - 89115d23782c48ff81ae3eb8d683bb15: Client is gone, closing socket
+2020-06-05 23:09:50,589 - 127.0.0.1 - - [05/Jun/2020 23:09:50] "[37mGET /socket.io/?EIO=3&transport=polling&t=NA7qJEN&sid=89115d23782c48ff81ae3eb8d683bb15 HTTP/1.1[0m" 200 -
+2020-06-05 23:09:53,095 - d15c26d9b6184e3c929aff780ff8010f: Client is gone, closing socket
+2020-06-05 23:09:53,095 - d15c26d9b6184e3c929aff780ff8010f: Client is gone, closing socket
+2020-06-05 23:09:53,096 - 127.0.0.1 - - [05/Jun/2020 23:09:53] "[37mGET /socket.io/?EIO=3&transport=polling&t=NA7qJEf&sid=d15c26d9b6184e3c929aff780ff8010f HTTP/1.1[0m" 200 -
+2020-06-05 23:09:53,948 - 195e8ba57eeb44eeb0bbce9b0fe20799: Client is gone, closing socket
+2020-06-05 23:09:53,948 - 127.0.0.1 - - [05/Jun/2020 23:09:53] "[31m[1mGET /socket.io/?EIO=3&transport=polling&t=NA7qJEh&sid=195e8ba57eeb44eeb0bbce9b0fe20799 HTTP/1.1[0m" 400 -
+2020-06-05 23:09:58,107 - 28ef6daf16fa4b96ab89acdda29cf789: Client is gone, closing socket
+2020-06-05 23:09:58,107 - 28ef6daf16fa4b96ab89acdda29cf789: Client is gone, closing socket
+2020-06-05 23:10:00,608 - 6da9de8aab2240a5b9a708960b8d0913: Client is gone, closing socket
+2020-06-05 23:10:00,608 - 6da9de8aab2240a5b9a708960b8d0913: Client is gone, closing socket
+2020-06-05 23:10:02,312 - d9487f71372642ca94f01937a222dc00: Client is gone, closing socket
+2020-06-05 23:10:02,312 - 127.0.0.1 - - [05/Jun/2020 23:10:02] "[31m[1mGET /socket.io/?EIO=3&transport=polling&t=NA7qLHT&sid=d9487f71372642ca94f01937a222dc00 HTTP/1.1[0m" 400 -
+2020-06-05 23:10:02,328 - 47753edc544e49acb4b65dc97cbd98be: Client is gone, closing socket
+2020-06-05 23:10:02,328 - 127.0.0.1 - - [05/Jun/2020 23:10:02] "[31m[1mGET /socket.io/?EIO=3&transport=polling&t=NA7qLHW&sid=47753edc544e49acb4b65dc97cbd98be HTTP/1.1[0m" 400 -
+2020-06-05 23:10:02,439 - d9ffaaa255d84fabb19eb9e0ea33b540: Client is gone, closing socket
+2020-06-05 23:10:02,439 - 06c0108467384aaf8e8f56be6dc45c11: Client is gone, closing socket
+2020-06-05 23:10:02,439 - 623c664d4db84d4ba87dcbde35e041b1: Client is gone, closing socket
+2020-06-05 23:10:02,440 - 4bb25d8376ea49d0a063fb9c8ae7da41: Client is gone, closing socket
+2020-06-05 23:10:02,440 - 127.0.0.1 - - [05/Jun/2020 23:10:02] "[31m[1mGET /socket.io/?EIO=3&transport=polling&t=NA7qLJB&sid=d9ffaaa255d84fabb19eb9e0ea33b540 HTTP/1.1[0m" 400 -
+2020-06-05 23:10:02,441 - 127.0.0.1 - - [05/Jun/2020 23:10:02] "[31m[1mGET /socket.io/?EIO=3&transport=polling&t=NA7qLJG&sid=06c0108467384aaf8e8f56be6dc45c11 HTTP/1.1[0m" 400 -
+2020-06-05 23:10:02,441 - 127.0.0.1 - - [05/Jun/2020 23:10:02] "[31m[1mGET /socket.io/?EIO=3&transport=polling&t=NA7qLJI&sid=623c664d4db84d4ba87dcbde35e041b1 HTTP/1.1[0m" 400 -
+2020-06-05 23:10:02,442 - 127.0.0.1 - - [05/Jun/2020 23:10:02] "[31m[1mGET /socket.io/?EIO=3&transport=polling&t=NA7qLJF&sid=4bb25d8376ea49d0a063fb9c8ae7da41 HTTP/1.1[0m" 400 -
+2020-06-05 23:10:05,857 - d7347d7ab33e42558af543270aa9d82f: Sending packet OPEN data {'sid': 'd7347d7ab33e42558af543270aa9d82f', 'upgrades': [], 'pingTimeout': 60000, 'pingInterval': 25000}
+2020-06-05 23:10:05,858 - d7347d7ab33e42558af543270aa9d82f: Sending packet MESSAGE data 0
+2020-06-05 23:10:05,859 - 217706e0861f42b189b166b3ee8b80df: Sending packet OPEN data {'sid': '217706e0861f42b189b166b3ee8b80df', 'upgrades': [], 'pingTimeout': 60000, 'pingInterval': 25000}
+2020-06-05 23:10:05,859 - 127.0.0.1 - - [05/Jun/2020 23:10:05] "[37mGET /socket.io/?EIO=3&transport=polling&t=NA7qaoM HTTP/1.1[0m" 200 -
+2020-06-05 23:10:05,859 - 217706e0861f42b189b166b3ee8b80df: Sending packet MESSAGE data 0
+2020-06-05 23:10:05,860 - 127.0.0.1 - - [05/Jun/2020 23:10:05] "[37mGET /socket.io/?EIO=3&transport=polling&t=NA7qaoP HTTP/1.1[0m" 200 -
+2020-06-05 23:10:05,881 - 127.0.0.1 - - [05/Jun/2020 23:10:05] "[37mPOST /connect HTTP/1.1[0m" 200 -
+2020-06-05 23:10:05,933 - 76a51d6331944cc5b047a4c234b65dfd: Sending packet OPEN data {'sid': '76a51d6331944cc5b047a4c234b65dfd', 'upgrades': [], 'pingTimeout': 60000, 'pingInterval': 25000}
+2020-06-05 23:10:05,933 - 1802ed3e3ee24726ac5fbd89abd1100c: Sending packet OPEN data {'sid': '1802ed3e3ee24726ac5fbd89abd1100c', 'upgrades': [], 'pingTimeout': 60000, 'pingInterval': 25000}
+2020-06-05 23:10:05,933 - 76a51d6331944cc5b047a4c234b65dfd: Sending packet MESSAGE data 0
+2020-06-05 23:10:05,934 - 1802ed3e3ee24726ac5fbd89abd1100c: Sending packet MESSAGE data 0
+2020-06-05 23:10:05,934 - 127.0.0.1 - - [05/Jun/2020 23:10:05] "[37mGET /socket.io/?EIO=3&transport=polling&t=NA7qapZ HTTP/1.1[0m" 200 -
+2020-06-05 23:10:05,935 - 127.0.0.1 - - [05/Jun/2020 23:10:05] "[37mGET /socket.io/?EIO=3&transport=polling&t=NA7qapa HTTP/1.1[0m" 200 -
+2020-06-05 23:10:05,937 - 4253bb2ee989478bb0ca518ba0c886a1: Sending packet OPEN data {'sid': '4253bb2ee989478bb0ca518ba0c886a1', 'upgrades': [], 'pingTimeout': 60000, 'pingInterval': 25000}
+2020-06-05 23:10:05,939 - 772bf750371b4503a3784b0e78171348: Sending packet OPEN data {'sid': '772bf750371b4503a3784b0e78171348', 'upgrades': [], 'pingTimeout': 60000, 'pingInterval': 25000}
+2020-06-05 23:10:05,939 - 4253bb2ee989478bb0ca518ba0c886a1: Sending packet MESSAGE data 0
+2020-06-05 23:10:05,939 - 772bf750371b4503a3784b0e78171348: Sending packet MESSAGE data 0
+2020-06-05 23:10:05,940 - 127.0.0.1 - - [05/Jun/2020 23:10:05] "[37mGET /socket.io/?EIO=3&transport=polling&t=NA7qape HTTP/1.1[0m" 200 -
+2020-06-05 23:10:05,940 - 127.0.0.1 - - [05/Jun/2020 23:10:05] "[37mGET /socket.io/?EIO=3&transport=polling&t=NA7qapf HTTP/1.1[0m" 200 -
+2020-06-05 23:10:05,946 - c03a8503e4f640c285adc7098d31929e: Sending packet OPEN data {'sid': 'c03a8503e4f640c285adc7098d31929e', 'upgrades': [], 'pingTimeout': 60000, 'pingInterval': 25000}
+2020-06-05 23:10:05,947 - 75c23a9a47f940a8984a65ddca6ce136: Sending packet OPEN data {'sid': '75c23a9a47f940a8984a65ddca6ce136', 'upgrades': [], 'pingTimeout': 60000, 'pingInterval': 25000}
+2020-06-05 23:10:05,947 - c03a8503e4f640c285adc7098d31929e: Sending packet MESSAGE data 0
+2020-06-05 23:10:05,948 - 75c23a9a47f940a8984a65ddca6ce136: Sending packet MESSAGE data 0
+2020-06-05 23:10:05,948 - 127.0.0.1 - - [05/Jun/2020 23:10:05] "[37mGET /socket.io/?EIO=3&transport=polling&t=NA7qapi HTTP/1.1[0m" 200 -
+2020-06-05 23:10:05,949 - 127.0.0.1 - - [05/Jun/2020 23:10:05] "[37mGET /socket.io/?EIO=3&transport=polling&t=NA7qapj HTTP/1.1[0m" 200 -
+2020-06-05 23:10:18,161 - 51c9358ba3084a5ead97dbd123475c7c: Client is gone, closing socket
+2020-06-05 23:10:18,161 - 51c9358ba3084a5ead97dbd123475c7c: Client is gone, closing socket
+2020-06-05 23:10:20,668 - c290bea149f24a44812860ea850f9721: Client is gone, closing socket
+2020-06-05 23:10:20,668 - c290bea149f24a44812860ea850f9721: Client is gone, closing socket
+2020-06-05 23:10:26,542 - f026eae5bf1642e38c3e331ad35b2472: Client is gone, closing socket
+2020-06-05 23:10:26,543 - 127.0.0.1 - - [05/Jun/2020 23:10:26] "[31m[1mGET /socket.io/?EIO=3&transport=polling&t=NA7qRBv&sid=f026eae5bf1642e38c3e331ad35b2472 HTTP/1.1[0m" 400 -
+2020-06-05 23:10:26,557 - 30f3d2fba6f54f42aacbed8021adef2b: Client is gone, closing socket
+2020-06-05 23:10:26,557 - 127.0.0.1 - - [05/Jun/2020 23:10:26] "[31m[1mGET /socket.io/?EIO=3&transport=polling&t=NA7qRC5&sid=30f3d2fba6f54f42aacbed8021adef2b HTTP/1.1[0m" 400 -
+2020-06-05 23:10:34,037 - dd47be6e5bfa47a296d1fa4aad13ab93: Client is gone, closing socket
+2020-06-05 23:10:34,038 - 2b2f8c97568743b19945e9165475297f: Client is gone, closing socket
+2020-06-05 23:10:34,038 - 127.0.0.1 - - [05/Jun/2020 23:10:34] "[31m[1mGET /socket.io/?EIO=3&transport=polling&t=NA7qT16&sid=dd47be6e5bfa47a296d1fa4aad13ab93 HTTP/1.1[0m" 400 -
+2020-06-05 23:10:34,039 - 127.0.0.1 - - [05/Jun/2020 23:10:34] "[31m[1mGET /socket.io/?EIO=3&transport=polling&t=NA7qT1B&sid=2b2f8c97568743b19945e9165475297f HTTP/1.1[0m" 400 -
+2020-06-05 23:10:45,642 - 393a70e820c34202ac607800474397b0: Client is gone, closing socket
+2020-06-05 23:10:45,643 - 127.0.0.1 - - [05/Jun/2020 23:10:45] "[31m[1mGET /socket.io/?EIO=3&transport=polling&t=NA7qVsT&sid=393a70e820c34202ac607800474397b0 HTTP/1.1[0m" 400 -
+2020-06-05 23:10:45,658 - d1ff9e69c1be4e5ea3a62b3d252b11ea: Client is gone, closing socket
+2020-06-05 23:10:45,658 - 127.0.0.1 - - [05/Jun/2020 23:10:45] "[31m[1mGET /socket.io/?EIO=3&transport=polling&t=NA7qVsW&sid=d1ff9e69c1be4e5ea3a62b3d252b11ea HTTP/1.1[0m" 400 -
+2020-06-05 23:10:55,672 - 9052735f31be48b98643320901faa0e7: Sending packet OPEN data {'sid': '9052735f31be48b98643320901faa0e7', 'upgrades': [], 'pingTimeout': 60000, 'pingInterval': 25000}
+2020-06-05 23:10:55,673 - 2a17119b8ce24bcb9b4f663fcf3fdbef: Sending packet OPEN data {'sid': '2a17119b8ce24bcb9b4f663fcf3fdbef', 'upgrades': [], 'pingTimeout': 60000, 'pingInterval': 25000}
+2020-06-05 23:10:55,673 - 9052735f31be48b98643320901faa0e7: Sending packet MESSAGE data 0
+2020-06-05 23:10:55,674 - 2a17119b8ce24bcb9b4f663fcf3fdbef: Sending packet MESSAGE data 0
+2020-06-05 23:10:55,674 - 127.0.0.1 - - [05/Jun/2020 23:10:55] "[37mGET /socket.io/?EIO=3&transport=polling&t=NA7qmyi HTTP/1.1[0m" 200 -
+2020-06-05 23:10:55,675 - 127.0.0.1 - - [05/Jun/2020 23:10:55] "[37mGET /socket.io/?EIO=3&transport=polling&t=NA7qmyl HTTP/1.1[0m" 200 -
+2020-06-05 23:10:55,706 - 127.0.0.1 - - [05/Jun/2020 23:10:55] "[37mPOST /connect HTTP/1.1[0m" 200 -
+2020-06-05 23:10:55,766 - d708ba08bb884c7eb3721dee92d7be77: Sending packet OPEN data {'sid': 'd708ba08bb884c7eb3721dee92d7be77', 'upgrades': [], 'pingTimeout': 60000, 'pingInterval': 25000}
+2020-06-05 23:10:55,766 - d708ba08bb884c7eb3721dee92d7be77: Sending packet MESSAGE data 0
+2020-06-05 23:10:55,767 - 127.0.0.1 - - [05/Jun/2020 23:10:55] "[37mGET /socket.io/?EIO=3&transport=polling&t=NA7qm-F HTTP/1.1[0m" 200 -
+2020-06-05 23:10:55,769 - 7b4cdf86336d422b894636da05f0144d: Sending packet OPEN data {'sid': '7b4cdf86336d422b894636da05f0144d', 'upgrades': [], 'pingTimeout': 60000, 'pingInterval': 25000}
+2020-06-05 23:10:55,769 - 7b4cdf86336d422b894636da05f0144d: Sending packet MESSAGE data 0
+2020-06-05 23:10:55,770 - 127.0.0.1 - - [05/Jun/2020 23:10:55] "[37mGET /socket.io/?EIO=3&transport=polling&t=NA7qm-I HTTP/1.1[0m" 200 -
+2020-06-05 23:10:55,781 - 1eb72f187bec4df1b36670b88b7ac8f7: Sending packet OPEN data {'sid': '1eb72f187bec4df1b36670b88b7ac8f7', 'upgrades': [], 'pingTimeout': 60000, 'pingInterval': 25000}
+2020-06-05 23:10:55,781 - 1eb72f187bec4df1b36670b88b7ac8f7: Sending packet MESSAGE data 0
+2020-06-05 23:10:55,782 - 127.0.0.1 - - [05/Jun/2020 23:10:55] "[37mGET /socket.io/?EIO=3&transport=polling&t=NA7qm-O HTTP/1.1[0m" 200 -
+2020-06-05 23:10:55,783 - 35dc6ededf684f6d8debc81274afc6b8: Sending packet OPEN data {'sid': '35dc6ededf684f6d8debc81274afc6b8', 'upgrades': [], 'pingTimeout': 60000, 'pingInterval': 25000}
+2020-06-05 23:10:55,784 - 35dc6ededf684f6d8debc81274afc6b8: Sending packet MESSAGE data 0
+2020-06-05 23:10:55,784 - 127.0.0.1 - - [05/Jun/2020 23:10:55] "[37mGET /socket.io/?EIO=3&transport=polling&t=NA7qm-P HTTP/1.1[0m" 200 -
+2020-06-05 23:10:55,785 - 9e156690647348a8ace025c55620524f: Sending packet OPEN data {'sid': '9e156690647348a8ace025c55620524f', 'upgrades': [], 'pingTimeout': 60000, 'pingInterval': 25000}
+2020-06-05 23:10:55,785 - 9e156690647348a8ace025c55620524f: Sending packet MESSAGE data 0
+2020-06-05 23:10:55,786 - 127.0.0.1 - - [05/Jun/2020 23:10:55] "[37mGET /socket.io/?EIO=3&transport=polling&t=NA7qm-S HTTP/1.1[0m" 200 -
+2020-06-05 23:10:55,788 - e337a41e550f4b0aae02d969bf486add: Sending packet OPEN data {'sid': 'e337a41e550f4b0aae02d969bf486add', 'upgrades': [], 'pingTimeout': 60000, 'pingInterval': 25000}
+2020-06-05 23:10:55,788 - e337a41e550f4b0aae02d969bf486add: Sending packet MESSAGE data 0
+2020-06-05 23:10:55,789 - 127.0.0.1 - - [05/Jun/2020 23:10:55] "[37mGET /socket.io/?EIO=3&transport=polling&t=NA7qm-T HTTP/1.1[0m" 200 -
+2020-06-05 23:10:59,284 - d7347d7ab33e42558af543270aa9d82f: Client is gone, closing socket
+2020-06-05 23:10:59,284 - d7347d7ab33e42558af543270aa9d82f: Client is gone, closing socket
+2020-06-05 23:10:59,285 - 127.0.0.1 - - [05/Jun/2020 23:10:59] "[37mGET /socket.io/?EIO=3&transport=polling&t=NA7qap4&sid=d7347d7ab33e42558af543270aa9d82f HTTP/1.1[0m" 200 -
+2020-06-05 23:11:02,297 - 217706e0861f42b189b166b3ee8b80df: Client is gone, closing socket
+2020-06-05 23:11:02,297 - 217706e0861f42b189b166b3ee8b80df: Client is gone, closing socket
+2020-06-05 23:11:02,298 - 127.0.0.1 - - [05/Jun/2020 23:11:02] "[37mGET /socket.io/?EIO=3&transport=polling&t=NA7qapK&sid=217706e0861f42b189b166b3ee8b80df HTTP/1.1[0m" 200 -
+2020-06-05 23:11:05,302 - 76a51d6331944cc5b047a4c234b65dfd: Client is gone, closing socket
+2020-06-05 23:11:05,302 - 76a51d6331944cc5b047a4c234b65dfd: Client is gone, closing socket
+2020-06-05 23:11:05,303 - 127.0.0.1 - - [05/Jun/2020 23:11:05] "[37mGET /socket.io/?EIO=3&transport=polling&t=NA7qaq2&sid=76a51d6331944cc5b047a4c234b65dfd HTTP/1.1[0m" 200 -
+2020-06-05 23:11:05,975 - 4253bb2ee989478bb0ca518ba0c886a1: Client is gone, closing socket
+2020-06-05 23:11:05,975 - 772bf750371b4503a3784b0e78171348: Client is gone, closing socket
+2020-06-05 23:11:05,975 - 1802ed3e3ee24726ac5fbd89abd1100c: Client is gone, closing socket
+2020-06-05 23:11:05,976 - 127.0.0.1 - - [05/Jun/2020 23:11:05] "[31m[1mGET /socket.io/?EIO=3&transport=polling&t=NA7qaq7&sid=4253bb2ee989478bb0ca518ba0c886a1 HTTP/1.1[0m" 400 -
+2020-06-05 23:11:05,976 - 127.0.0.1 - - [05/Jun/2020 23:11:05] "[31m[1mGET /socket.io/?EIO=3&transport=polling&t=NA7qaq4&sid=772bf750371b4503a3784b0e78171348 HTTP/1.1[0m" 400 -
+2020-06-05 23:11:05,977 - 127.0.0.1 - - [05/Jun/2020 23:11:05] "[31m[1mGET /socket.io/?EIO=3&transport=polling&t=NA7qap-&sid=1802ed3e3ee24726ac5fbd89abd1100c HTTP/1.1[0m" 400 -
+2020-06-05 23:11:07,606 - a84bbfe490d743339fe1ea3f8a299a0f: Sending packet OPEN data {'sid': 'a84bbfe490d743339fe1ea3f8a299a0f', 'upgrades': [], 'pingTimeout': 60000, 'pingInterval': 25000}
+2020-06-05 23:11:07,607 - a84bbfe490d743339fe1ea3f8a299a0f: Sending packet MESSAGE data 0
+2020-06-05 23:11:07,607 - 127.0.0.1 - - [05/Jun/2020 23:11:07] "[37mGET /socket.io/?EIO=3&transport=polling&t=NA7qpt0 HTTP/1.1[0m" 200 -
+2020-06-05 23:11:07,608 - 109ca66d75e54381a958c5ec3611c2d6: Sending packet OPEN data {'sid': '109ca66d75e54381a958c5ec3611c2d6', 'upgrades': [], 'pingTimeout': 60000, 'pingInterval': 25000}
+2020-06-05 23:11:07,609 - 109ca66d75e54381a958c5ec3611c2d6: Sending packet MESSAGE data 0
+2020-06-05 23:11:07,610 - 127.0.0.1 - - [05/Jun/2020 23:11:07] "[37mGET /socket.io/?EIO=3&transport=polling&t=NA7qpt3 HTTP/1.1[0m" 200 -
+2020-06-05 23:11:07,626 - 127.0.0.1 - - [05/Jun/2020 23:11:07] "[37mPOST /connect HTTP/1.1[0m" 200 -
+2020-06-05 23:11:07,685 - 712b8d69c30e46f7ab5137ad0bfc5ffd: Sending packet OPEN data {'sid': '712b8d69c30e46f7ab5137ad0bfc5ffd', 'upgrades': [], 'pingTimeout': 60000, 'pingInterval': 25000}
+2020-06-05 23:11:07,685 - 712b8d69c30e46f7ab5137ad0bfc5ffd: Sending packet MESSAGE data 0
+2020-06-05 23:11:07,687 - 127.0.0.1 - - [05/Jun/2020 23:11:07] "[37mGET /socket.io/?EIO=3&transport=polling&t=NA7qpuU HTTP/1.1[0m" 200 -
+2020-06-05 23:11:07,687 - c4d634af18df485dad6aba484876e74f: Sending packet OPEN data {'sid': 'c4d634af18df485dad6aba484876e74f', 'upgrades': [], 'pingTimeout': 60000, 'pingInterval': 25000}
+2020-06-05 23:11:07,688 - c4d634af18df485dad6aba484876e74f: Sending packet MESSAGE data 0
+2020-06-05 23:11:07,688 - 127.0.0.1 - - [05/Jun/2020 23:11:07] "[37mGET /socket.io/?EIO=3&transport=polling&t=NA7qpuV HTTP/1.1[0m" 200 -
+2020-06-05 23:11:07,693 - 09f4e765fb594a3a8b3aa4a1c7d55395: Sending packet OPEN data {'sid': '09f4e765fb594a3a8b3aa4a1c7d55395', 'upgrades': [], 'pingTimeout': 60000, 'pingInterval': 25000}
+2020-06-05 23:11:07,693 - 75b23af41faa4001a454dbaa27e9572a: Sending packet OPEN data {'sid': '75b23af41faa4001a454dbaa27e9572a', 'upgrades': [], 'pingTimeout': 60000, 'pingInterval': 25000}
+2020-06-05 23:11:07,694 - 09f4e765fb594a3a8b3aa4a1c7d55395: Sending packet MESSAGE data 0
+2020-06-05 23:11:07,694 - 75b23af41faa4001a454dbaa27e9572a: Sending packet MESSAGE data 0
+2020-06-05 23:11:07,694 - 127.0.0.1 - - [05/Jun/2020 23:11:07] "[37mGET /socket.io/?EIO=3&transport=polling&t=NA7qpuZ HTTP/1.1[0m" 200 -
+2020-06-05 23:11:07,695 - 127.0.0.1 - - [05/Jun/2020 23:11:07] "[37mGET /socket.io/?EIO=3&transport=polling&t=NA7qpuZ.0 HTTP/1.1[0m" 200 -
+2020-06-05 23:11:17,316 - c03a8503e4f640c285adc7098d31929e: Client is gone, closing socket
+2020-06-05 23:11:17,316 - c03a8503e4f640c285adc7098d31929e: Client is gone, closing socket
+2020-06-05 23:11:20,332 - 75c23a9a47f940a8984a65ddca6ce136: Client is gone, closing socket
+2020-06-05 23:11:20,332 - 75c23a9a47f940a8984a65ddca6ce136: Client is gone, closing socket
+2020-06-05 23:11:31,098 - 75341f2df1554bcd91868f6f943553a8: Sending packet OPEN data {'sid': '75341f2df1554bcd91868f6f943553a8', 'upgrades': [], 'pingTimeout': 60000, 'pingInterval': 25000}
+2020-06-05 23:11:31,098 - 75341f2df1554bcd91868f6f943553a8: Sending packet MESSAGE data 0
+2020-06-05 23:11:31,099 - 127.0.0.1 - - [05/Jun/2020 23:11:31] "[37mGET /socket.io/?EIO=3&transport=polling&t=NA7qvbq HTTP/1.1[0m" 200 -
+2020-06-05 23:11:31,101 - e36b8a5175454a9aa8e754138d2cadbd: Sending packet OPEN data {'sid': 'e36b8a5175454a9aa8e754138d2cadbd', 'upgrades': [], 'pingTimeout': 60000, 'pingInterval': 25000}
+2020-06-05 23:11:31,101 - e36b8a5175454a9aa8e754138d2cadbd: Sending packet MESSAGE data 0
+2020-06-05 23:11:31,102 - 127.0.0.1 - - [05/Jun/2020 23:11:31] "[37mGET /socket.io/?EIO=3&transport=polling&t=NA7qvbt HTTP/1.1[0m" 200 -
+2020-06-05 23:11:31,114 - 127.0.0.1 - - [05/Jun/2020 23:11:31] "[37mPOST /connect HTTP/1.1[0m" 200 -
+2020-06-05 23:11:31,173 - ea4a379346384b4289d297d275c0b62f: Sending packet OPEN data {'sid': 'ea4a379346384b4289d297d275c0b62f', 'upgrades': [], 'pingTimeout': 60000, 'pingInterval': 25000}
+2020-06-05 23:11:31,173 - ea4a379346384b4289d297d275c0b62f: Sending packet MESSAGE data 0
+2020-06-05 23:11:31,173 - 127.0.0.1 - - [05/Jun/2020 23:11:31] "[37mGET /socket.io/?EIO=3&transport=polling&t=NA7qvdU HTTP/1.1[0m" 200 -
+2020-06-05 23:11:31,175 - 00871a27e1d540d6a0595d9414c1665d: Sending packet OPEN data {'sid': '00871a27e1d540d6a0595d9414c1665d', 'upgrades': [], 'pingTimeout': 60000, 'pingInterval': 25000}
+2020-06-05 23:11:31,175 - 00871a27e1d540d6a0595d9414c1665d: Sending packet MESSAGE data 0
+2020-06-05 23:11:31,176 - 127.0.0.1 - - [05/Jun/2020 23:11:31] "[37mGET /socket.io/?EIO=3&transport=polling&t=NA7qvdX HTTP/1.1[0m" 200 -
+2020-06-05 23:11:31,188 - 1dcf8b9670a342e7b1177bcc3092129b: Sending packet OPEN data {'sid': '1dcf8b9670a342e7b1177bcc3092129b', 'upgrades': [], 'pingTimeout': 60000, 'pingInterval': 25000}
+2020-06-05 23:11:31,188 - 1dcf8b9670a342e7b1177bcc3092129b: Sending packet MESSAGE data 0
+2020-06-05 23:11:31,188 - 127.0.0.1 - - [05/Jun/2020 23:11:31] "[37mGET /socket.io/?EIO=3&transport=polling&t=NA7qvdd HTTP/1.1[0m" 200 -
+2020-06-05 23:11:31,191 - 671a66584b934658a26a33e82d7e4a1f: Sending packet OPEN data {'sid': '671a66584b934658a26a33e82d7e4a1f', 'upgrades': [], 'pingTimeout': 60000, 'pingInterval': 25000}
+2020-06-05 23:11:31,191 - 671a66584b934658a26a33e82d7e4a1f: Sending packet MESSAGE data 0
+2020-06-05 23:11:31,191 - 127.0.0.1 - - [05/Jun/2020 23:11:31] "[37mGET /socket.io/?EIO=3&transport=polling&t=NA7qvde HTTP/1.1[0m" 200 -
+2020-06-05 23:11:45,255 - 9052735f31be48b98643320901faa0e7: Client is gone, closing socket
+2020-06-05 23:11:45,255 - 9052735f31be48b98643320901faa0e7: Client is gone, closing socket
+2020-06-05 23:11:45,256 - 127.0.0.1 - - [05/Jun/2020 23:11:45] "[37mGET /socket.io/?EIO=3&transport=polling&t=NA7qmzj&sid=9052735f31be48b98643320901faa0e7 HTTP/1.1[0m" 200 -
+2020-06-05 23:11:47,996 - 2a17119b8ce24bcb9b4f663fcf3fdbef: Client is gone, closing socket
+2020-06-05 23:11:47,996 - 2a17119b8ce24bcb9b4f663fcf3fdbef: Client is gone, closing socket
+2020-06-05 23:11:47,997 - 127.0.0.1 - - [05/Jun/2020 23:11:47] "[37mGET /socket.io/?EIO=3&transport=polling&t=NA7qm-1&sid=2a17119b8ce24bcb9b4f663fcf3fdbef HTTP/1.1[0m" 200 -
+2020-06-05 23:11:50,729 - d708ba08bb884c7eb3721dee92d7be77: Client is gone, closing socket
+2020-06-05 23:11:50,729 - d708ba08bb884c7eb3721dee92d7be77: Client is gone, closing socket
+2020-06-05 23:11:50,730 - 127.0.0.1 - - [05/Jun/2020 23:11:50] "[37mGET /socket.io/?EIO=3&transport=polling&t=NA7qm-a&sid=d708ba08bb884c7eb3721dee92d7be77 HTTP/1.1[0m" 200 -
+2020-06-05 23:11:53,472 - 7b4cdf86336d422b894636da05f0144d: Client is gone, closing socket
+2020-06-05 23:11:53,472 - 7b4cdf86336d422b894636da05f0144d: Client is gone, closing socket
+2020-06-05 23:11:53,473 - 127.0.0.1 - - [05/Jun/2020 23:11:53] "[37mGET /socket.io/?EIO=3&transport=polling&t=NA7qm-c&sid=7b4cdf86336d422b894636da05f0144d HTTP/1.1[0m" 200 -
+2020-06-05 23:11:55,805 - 1eb72f187bec4df1b36670b88b7ac8f7: Client is gone, closing socket
+2020-06-05 23:11:55,806 - 127.0.0.1 - - [05/Jun/2020 23:11:55] "[31m[1mGET /socket.io/?EIO=3&transport=polling&t=NA7qm-j&sid=1eb72f187bec4df1b36670b88b7ac8f7 HTTP/1.1[0m" 400 -
+2020-06-05 23:11:55,820 - 35dc6ededf684f6d8debc81274afc6b8: Client is gone, closing socket
+2020-06-05 23:11:55,820 - 127.0.0.1 - - [05/Jun/2020 23:11:55] "[31m[1mGET /socket.io/?EIO=3&transport=polling&t=NA7qm-l&sid=35dc6ededf684f6d8debc81274afc6b8 HTTP/1.1[0m" 400 -
+2020-06-05 23:12:01,677 - 9e156690647348a8ace025c55620524f: Client is gone, closing socket
+2020-06-05 23:12:01,677 - 9e156690647348a8ace025c55620524f: Client is gone, closing socket
+2020-06-05 23:12:04,419 - e337a41e550f4b0aae02d969bf486add: Client is gone, closing socket
+2020-06-05 23:12:04,419 - e337a41e550f4b0aae02d969bf486add: Client is gone, closing socket
+2020-06-05 23:12:07,150 - a84bbfe490d743339fe1ea3f8a299a0f: Client is gone, closing socket
+2020-06-05 23:12:07,150 - a84bbfe490d743339fe1ea3f8a299a0f: Client is gone, closing socket
+2020-06-05 23:12:07,151 - 127.0.0.1 - - [05/Jun/2020 23:12:07] "[37mGET /socket.io/?EIO=3&transport=polling&t=NA7qpu4&sid=a84bbfe490d743339fe1ea3f8a299a0f HTTP/1.1[0m" 200 -
+2020-06-05 23:12:07,678 - 109ca66d75e54381a958c5ec3611c2d6: Client is gone, closing socket
+2020-06-05 23:12:07,679 - 127.0.0.1 - - [05/Jun/2020 23:12:07] "[31m[1mGET /socket.io/?EIO=3&transport=polling&t=NA7qpuE&sid=109ca66d75e54381a958c5ec3611c2d6 HTTP/1.1[0m" 400 -
+2020-06-05 23:12:07,709 - 712b8d69c30e46f7ab5137ad0bfc5ffd: Client is gone, closing socket
+2020-06-05 23:12:07,709 - c4d634af18df485dad6aba484876e74f: Client is gone, closing socket
+2020-06-05 23:12:07,710 - 127.0.0.1 - - [05/Jun/2020 23:12:07] "[31m[1mGET /socket.io/?EIO=3&transport=polling&t=NA7qpuk&sid=712b8d69c30e46f7ab5137ad0bfc5ffd HTTP/1.1[0m" 400 -
+2020-06-05 23:12:07,710 - 127.0.0.1 - - [05/Jun/2020 23:12:07] "[31m[1mGET /socket.io/?EIO=3&transport=polling&t=NA7qpuo&sid=c4d634af18df485dad6aba484876e74f HTTP/1.1[0m" 400 -
+2020-06-05 23:12:07,724 - 09f4e765fb594a3a8b3aa4a1c7d55395: Client is gone, closing socket
+2020-06-05 23:12:07,724 - 75b23af41faa4001a454dbaa27e9572a: Client is gone, closing socket
+2020-06-05 23:12:07,725 - 127.0.0.1 - - [05/Jun/2020 23:12:07] "[31m[1mGET /socket.io/?EIO=3&transport=polling&t=NA7qpuv&sid=09f4e765fb594a3a8b3aa4a1c7d55395 HTTP/1.1[0m" 400 -
+2020-06-05 23:12:07,725 - 127.0.0.1 - - [05/Jun/2020 23:12:07] "[31m[1mGET /socket.io/?EIO=3&transport=polling&t=NA7qpuy&sid=75b23af41faa4001a454dbaa27e9572a HTTP/1.1[0m" 400 -
