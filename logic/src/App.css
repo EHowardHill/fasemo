@@ -1,21 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Bentham&family=Fredoka+One&family=Playfair+Display:wght@600&display=swap');
 
 .App { 
-  background-image: url("https://i.pinimg.com/564x/5f/07/a0/5f07a0eee4e5746f1aead424459518cc.jpg");
+  background-image: url("https://i.pinimg.com/564x/8f/76/39/8f7639c3fcd7ad71f693b194a1c47484.jpg");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   color: whitesmoke;
   font-family: 'Playfair Display', serif;
+  padding: 12px 12px 12px 12px;
 }
 
 .inFront {
   z-index: 1;
 }
 
+.inFront2 {
+  z-index: 2;
+}
+
+.title {
+  font-size: xx-large;
+  padding: 75px;
+  text-shadow: 2px 2px #ffffff;
+}
+
+.signinBox {
+  color: black;
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
+
 .centerContent {
-  box-shadow: 2px 2px 12px #ffffff;
   margin-left: auto;
   margin-right: auto;
   display: block;
@@ -23,7 +39,7 @@
 
 .frontPanel {
   width: 100vw;
-  height: 100vh;
+  max-height: auto;
   position: absolute;
   background-color: rgba(255, 255, 255, 0.8);
   backdrop-filter: blur(8px);
@@ -46,7 +62,8 @@
 .flexboxVert {
   display: flex;
   flex-direction: column;
-  max-height: 100vh;
+  min-height: auto;
+  height: auto;
 }
 
 .flexboxVertContent {
@@ -58,8 +75,8 @@
 .flexboxHorz {
   display: flex;
   flex-direction: row;
-  height: 100%;
-  min-height: 100vh;
+  max-height: calc(100vh - 24px);
+  background-color: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(2px);
 }
 
@@ -75,10 +92,20 @@
 }
 
 .message {
+  width: 100%;
   margin: 0px 0px 0px 0px;
   padding: 5px 5px 5px 5px;
   color: whitesmoke;
   min-height: 36px;
+  display: flex;
+  flex-direction: row;
+  text-shadow: 2px 2px #000000;
+}
+
+.messageSmall {
+  margin-left: 52px;
+  padding: 0px 5px 5px 0px;
+  color: whitesmoke;
   display: flex;
   flex-direction: row;
   text-shadow: 2px 2px #000000;
@@ -93,8 +120,17 @@
   flex-direction: row;
 }
 
+.topPanel {
+  width: auto;
+  font-size: large;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(8px);
+  box-shadow: 2px 2px 12px #000000;
+  align-content: center;
+}
+
 .leftPanel {
-  width: 20vw;
+  width: 200px;
   background: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(8px);
   box-shadow: 2px 2px 12px #000000;
@@ -105,11 +141,39 @@
 }
 
 .profilePic {
-  width: 32px;
-  height: 32px;
+  width: 42px;
+  height: 42px;
   margin-right: 5px;
 }
 
 .messageInput {
   width: 100%;
+}
+
+.tinyText {
+  font-size: small;
+  font-weight: bold;
+  margin-right: 12px;
+  color: deepskyblue;
+}
+
+.smallText {
+  font-size: small;
+}
+
+.bigFlex {
+  width: auto;
+  display: flex;
+}
+
+.flex {
+  flex: 1;
+}
+
+.fullWidth {
+  width: 100%;
+}
+
+.slightLeft {
+  margin-left: 5px;
 }

@@ -28,21 +28,33 @@ ROOMS = {}
 
 @app.route('/connect', methods=["GET", "POST"])
 def connected():
-    return {'connect': True, 'signedin': False}
 
-@io.on('refresh')
-def refresh_thread():
+    from_form = False
+    aliases = []
 
-    mess = Messages.query.limit(100).all()
+    try:
+        data = request.get_json()
+        usern = data['user']
+        passw = data['pass']
+        from_form = True
+    except:
+        try:
+            usern = session['user']
+            passw = session['pass']
+        except:
+            usern = ''
+            passw = ''
 
-    output = [
-        {
-            'pic': Alias.query.filter_by(id=m.alias).first().pic_profile,
-            'text': m.content
-        } for m in mess if m != None
-    ]
+    v = Login.query.filter_by(usern=session['user']).first()
+    valid = True if v != None else False
 
-    io.emit('thread', json.dumps(output), session['room'])
+    if valid and from_form:
+        session['user'] = usern
+        session['pass'] = passw
+
+    refresh_thread()
+
+    return {'connect': True, 'signedin': valid}
 
 @app.route('/post_message', methods=["POST"])
 def post_message():
@@ -50,7 +62,7 @@ def post_message():
     raw = request.get_json()
 
     new_message = Messages(
-        alias = session['alias'],
+        alias = raw['alias'],
         thread = 1,
         content = raw['message'],
         timestamp = str(datetime.now())
@@ -59,21 +71,48 @@ def post_message():
     db.session.add(new_message)
     db.session.commit()
 
-    send_messages()
     refresh_thread()
 
     return {'success':1}
 
-def send_messages():
+@app.route('/get_aliases', methods=["GET","POST"])
+def get_aliases():
+    aliases = []
+    v = Login.query.filter_by(usern=session['user']).first()
+    valid = True if v != None else False
+
+    if valid:
+        aliases = []
+        values = Alias_Reference.query.filter_by(user=v.id).all()
+        for val in values:
+            tdict = {}
+            x = Alias.query.filter_by(id=val.id).one()
+            tdict['name'] = x.name
+            tdict['pic_profile'] = x.pic_profile
+            tdict['id'] = x.id
+            aliases.append(tdict)
+        pprint(aliases)
+
+    return {aliases:'Hello?'}
+
+@io.on('refresh')
+def refresh_thread():
     mess = Messages.query.limit(100).all()
     mess.reverse()
 
-    output = [
-        {
-            'pic': Alias.query.filter_by(id=m.alias).first().pic_profile,
-            'text': m.content
-        } for m in mess if m != None
-    ]
+    output = []
+    nn = ''
+
+    for m in mess:
+        props = {}
+        n = Alias.query.filter_by(id=m.alias).first().name
+        if n == nn: props['continue'] = 1
+        props['pic'] = Alias.query.filter_by(id=m.alias).first().pic_profile
+        props['name'] = n
+        props['text'] = m.content
+        props['date'] = m.timestamp
+        output.append(props)
+        nn = n
 
     io.emit('refresh_thread', json.dumps(output))
 
