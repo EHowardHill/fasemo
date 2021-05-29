@@ -1,0 +1,4 @@
+firebase
+flask
+flask-sqlalchemy
+sqlalchemy

@@ -1,0 +1,39 @@
+version: '3.8'
+services:
+    
+    backend:
+        image: 'backend'
+        build:
+            context: './backend'
+            dockerfile: 'Dockerfile-backend'
+        ports: 
+            - '5000:5000'
+
+    client:
+        image: 'client'
+        build:
+            context: './client'
+            dockerfile: 'Dockerfile-frontend'
+        ports:
+            - '3000:3000'
+        volumes:
+            - "/node_modules"
+            - "./:/client"
+
+    db:
+        image: mysql:5.7
+        restart: always
+        environment:
+            MYSQL_DATABASE: 'fasemo'
+            MYSQL_USER: 'admin'
+            MYSQL_PASSWORD: 'Cheesehouse1470'
+            MYSQL_ROOT_PASSWORD: 'Welcometothecheesehouse1470'
+        ports:
+            - '3306:3306'
+        expose:
+            - '3306'
+        volumes:
+            - db:/var/lib/mysql
+
+volumes:
+    db:
