@@ -1,11 +1,27 @@
 import sys
+import vlc
+from PyQt6 import sip
 from PyQt6.QtWidgets import (
-    QApplication, QMainWindow, QWidget, QVBoxLayout, QToolBar, QToolButton,
-    QScrollArea, QHBoxLayout, QSizePolicy, QDialog, QLineEdit, QDialogButtonBox, QFormLayout, QPushButton, QSpacerItem
+    QApplication,
+    QMainWindow,
+    QWidget,
+    QVBoxLayout,
+    QToolBar,
+    QToolButton,
+    QScrollArea,
+    QHBoxLayout,
+    QSizePolicy,
+    QDialog,
+    QLineEdit,
+    QDialogButtonBox,
+    QFormLayout,
+    QPushButton,
+    QSpacerItem,
 )
 from PyQt6.QtCore import Qt, QUrl, QSize
 from PyQt6.QtGui import QPixmap, QPainter, QIcon
 from PyQt6.QtWebEngineWidgets import QWebEngineView
+
 
 class BrowserContainer(QWidget):
     def __init__(self, url: str, parent=None):
@@ -14,24 +30,35 @@ class BrowserContainer(QWidget):
         self.browser.setUrl(QUrl(url))
         self.browser.setMinimumWidth(320)
         # Let the browser expand in both directions
-        self.browser.setSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Expanding)
+        self.browser.setSizePolicy(
+            QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Expanding
+        )
 
         layout = QVBoxLayout()
-        layout.setContentsMargins(0,0,0,0)
+        layout.setContentsMargins(0, 0, 0, 0)
         self.setLayout(layout)
 
         # Top bar with Close button and URL edit
         top_bar = QHBoxLayout()
 
         self.url_edit = QLineEdit(url)
-        self.url_edit.setSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Fixed)
+        self.url_edit.setSizePolicy(
+            QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Fixed
+        )
         self.url_edit.editingFinished.connect(self.on_url_edited)
         top_bar.addWidget(self.url_edit)
+
+        grow_button = QPushButton()
+        grow_icon = QIcon("btn-grow.png")
+        grow_button.setIcon(grow_icon)  # fixed bug: was previously close_icon
+        grow_button.setText("")
+        grow_button.clicked.connect(self.request_grow)
+        top_bar.addWidget(grow_button)
 
         close_button = QPushButton()
         close_icon = QIcon("btn-exit.png")
         close_button.setIcon(close_icon)
-        close_button.setText("")  # Remove text
+        close_button.setText("")
         close_button.clicked.connect(self.request_close)
         top_bar.addWidget(close_button)
 
@@ -45,6 +72,55 @@ class BrowserContainer(QWidget):
         if self.close_requested:
             self.close_requested(self)
 
+    def request_grow(self):
+        # Get a reference to the main window, which should be Fasemo
+        main_window = self.window()
+        if not main_window:
+            return
+
+        # Attempt to get the scroll area from the main window
+        if not hasattr(main_window, "scroll_area"):
+            return
+
+        scroll_area = main_window.scroll_area
+
+        # Make sure layout adjustments are up-to-date
+        scroll_area.widget().adjustSize()
+
+        # Compute the new width: use the viewport's width to "fill" the window
+        viewport_width = scroll_area.viewport().width()
+
+        # Set this browser container to a fixed width equal to the viewport width
+        self.setFixedWidth(viewport_width)
+
+        # After changing the size, adjust the layout again
+        scroll_area.widget().adjustSize()
+
+        # We now want to center this BrowserContainer in the scroll area.
+        # To do this, we find the horizontal position and size of this widget,
+        # and then set the scroll bar so that the widget is centered.
+
+        # Get current geometry relative to the parent container
+        container_pos_x = self.x()
+        container_width = self.width()
+
+        # Get viewport width for centering calculation
+        view_width = scroll_area.viewport().width()
+
+        # Calculate the scroll value needed to center the browser container
+        # Desired center: widget center aligned with viewport center
+        desired_scroll_value = (
+            container_pos_x + (container_width / 2) - (view_width / 2)
+        )
+
+        # Ensure the value is within valid range
+        h_scrollbar = scroll_area.horizontalScrollBar()
+        desired_scroll_value = max(desired_scroll_value, h_scrollbar.minimum())
+        desired_scroll_value = min(desired_scroll_value, h_scrollbar.maximum())
+
+        # Set the scrollbar to the calculated position
+        h_scrollbar.setValue(int(desired_scroll_value))
+
     def on_browser_url_changed(self, qurl: QUrl):
         self.url_edit.setText(qurl.toString())
 
@@ -54,6 +130,7 @@ class BrowserContainer(QWidget):
             if not (text.startswith("http://") or text.startswith("https://")):
                 text = "http://" + text
             self.browser.setUrl(QUrl(text))
+
 
 class SplitterHandle(QWidget):
     def __init__(self, left_widget, container, parent=None):
@@ -90,33 +167,14 @@ class SplitterHandle(QWidget):
     def paintEvent(self, event):
         super().paintEvent(event)
         painter = QPainter(self)
-        
+
         # Center the pixmap horizontally and vertically
         x = (self.width() - self.drag_pixmap.width()) // 2
         y = (self.height() - self.drag_pixmap.height()) // 2
         painter.drawPixmap(x, y, self.drag_pixmap)
 
 
-class NewUrlDialog(QDialog):
-    def __init__(self, parent=None):
-        super().__init__(parent)
-        self.setWindowTitle("Open New URL")
-
-        layout = QFormLayout()
-        self.url_edit = QLineEdit()
-        layout.addRow("URL:", self.url_edit)
-
-        button_box = QDialogButtonBox(QDialogButtonBox.StandardButton.Ok | QDialogButtonBox.StandardButton.Cancel)
-        button_box.accepted.connect(self.accept)
-        button_box.rejected.connect(self.reject)
-        layout.addWidget(button_box)
-
-        self.setLayout(layout)
-
-    def get_url(self):
-        return self.url_edit.text().strip()
-
-class SimpleBrowser(QMainWindow):
+class Fasemo(QMainWindow):
     def __init__(self):
         super().__init__()
 
@@ -135,8 +193,12 @@ class SimpleBrowser(QMainWindow):
         # Scroll area
         self.scroll_area = QScrollArea()
         self.scroll_area.setWidgetResizable(True)
-        self.scroll_area.setHorizontalScrollBarPolicy(Qt.ScrollBarPolicy.ScrollBarAlwaysOn)
-        self.scroll_area.setVerticalScrollBarPolicy(Qt.ScrollBarPolicy.ScrollBarAsNeeded)
+        self.scroll_area.setHorizontalScrollBarPolicy(
+            Qt.ScrollBarPolicy.ScrollBarAlwaysOn
+        )
+        self.scroll_area.setVerticalScrollBarPolicy(
+            Qt.ScrollBarPolicy.ScrollBarAsNeeded
+        )
         self.scroll_area.setWidget(self.container)
         self.main_layout.addWidget(self.scroll_area)
 
@@ -153,16 +215,11 @@ class SimpleBrowser(QMainWindow):
         # Create first toolbar for browser buttons
         self.toolbar = QToolBar("Browser Toolbar")
         self.toolbar.setOrientation(Qt.Orientation.Horizontal)
-        self.addToolBar(Qt.ToolBarArea.BottomToolBarArea, self.toolbar)
-
-        # Second toolbar with "New" button
-        toolbar2 = QToolBar("New Toolbar")
-        toolbar2.setOrientation(Qt.Orientation.Horizontal)
         new_button = QToolButton()
         new_button.setText("New")
         new_button.clicked.connect(self.on_new_button_clicked)
-        toolbar2.addWidget(new_button)
-        self.addToolBar(Qt.ToolBarArea.BottomToolBarArea, toolbar2)
+        self.toolbar.addWidget(new_button)
+        self.addToolBar(Qt.ToolBarArea.BottomToolBarArea, self.toolbar)
 
         self.setWindowTitle("Fasemo")
 
@@ -173,29 +230,71 @@ class SimpleBrowser(QMainWindow):
         # Add spacer at the end
         self.add_spacer()
 
+        if False:
+            # Create a VLC instance
+            self.vlc_instance = vlc.Instance()
+            self.media_player = self.vlc_instance.media_player_new()
+
+            # Create video widget
+            self.videoWidget = QWidget(self)
+            self.setCentralWidget(self.videoWidget)
+            self.videoWidget.setGeometry(0, 0, 1920, 1080)
+
+            # Set up video output
+            if sys.platform == "linux":  # for Linux using the X Server
+                self.media_player.set_xwindow(self.videoWidget.winId())
+            elif sys.platform == "win32":  # for Windows
+                self.media_player.set_hwnd(self.videoWidget.winId())
+            elif sys.platform == "darwin":  # for MacOS
+                self.media_player.set_nsobject(self.videoWidget.winId())
+
+            # Load media
+            media = self.vlc_instance.media_new('wallpaper.mp4')
+            self.media_player.set_media(media)
+
+            # Play media
+            self.media_player.play()
+
+        self.add_browser("https://www.google.com")
+
+    def closeEvent(self, event):
+        # Cleanup code: disconnect signals, set booleans, etc.
+        super().closeEvent(event)
+
     def add_spacer(self):
         """Add (or re-add) the spacer at the end of the layout."""
         self.remove_existing_spacer()
-        self.extra_spacer = QSpacerItem(self.screen_width, 0, QSizePolicy.Policy.Fixed, QSizePolicy.Policy.Fixed)
+        self.extra_spacer = QSpacerItem(
+            self.screen_width, 0, QSizePolicy.Policy.Fixed, QSizePolicy.Policy.Fixed
+        )
         self.h_layout.addItem(self.extra_spacer)
 
     def remove_existing_spacer(self):
         """Remove the existing spacer from the layout if present."""
         if self.extra_spacer is None:
             return
-        for i in range(self.h_layout.count()):
-            item = self.h_layout.itemAt(i)
-            if item is self.extra_spacer:
-                self.h_layout.removeItem(item)
-                self.extra_spacer = None
-                break
+
+        if self.h_layout is not None and not sip.isdeleted(self.h_layout):
+            for i in range(self.h_layout.count()):
+                item = self.h_layout.itemAt(i)
+                if item is self.extra_spacer:
+                    self.h_layout.removeItem(item)
+                    self.extra_spacer = None
+                    break
 
     def add_browser_button(self, bc):
         btn = QToolButton()
         btn.setText("")
+        # When the button is clicked, center the corresponding browser
+        btn.clicked.connect(
+            lambda checked, browser_container=bc: self.center_browser(browser_container)
+        )
+
         action = self.toolbar.addWidget(btn)
         self.browser_toolbar_actions.append((btn, action))
-        bc.browser.iconChanged.connect(lambda _, b=bc.browser, bt=btn: self.updateButtonIcon(bt, b))
+        bc.browser.iconChanged.connect(
+            lambda _, b=bc.browser, bt=btn: self.updateButtonIcon(bt, b)
+        )
         self.updateButtonIcon(btn, bc.browser)
 
     def add_browser(self, url: str):
@@ -219,24 +318,18 @@ class SimpleBrowser(QMainWindow):
         self.container.adjustSize()
 
         # If toolbar already exists, add a button for this new browser
-        if hasattr(self, 'toolbar'):
+        if hasattr(self, "toolbar"):
             self.add_browser_button(bc)
 
     def updateButtonIcon(self, button, browser):
         icon = browser.icon()
         if not icon.isNull():
             button.setIcon(icon)
-            button.setIconSize(QSize(64,64))
+            button.setIconSize(QSize(64, 64))
             button.setText("")
 
     def on_new_button_clicked(self):
-        dialog = NewUrlDialog(self)
-        if dialog.exec() == QDialog.DialogCode.Accepted:
-            url = dialog.get_url()
-            if url:
-                if not (url.startswith("http://") or url.startswith("https://")):
-                    url = "http://" + url
-                self.add_browser(url)
+        self.add_browser("https://www.google.com")
 
     def close_browser(self, bc: BrowserContainer):
         if bc not in self.browser_containers:
@@ -281,11 +374,37 @@ class SimpleBrowser(QMainWindow):
                 return item
         return None
 
+    def center_browser(self, bc: BrowserContainer):
+        scroll_area = self.scroll_area
+        # Ensure layout adjustments are up to date
+        scroll_area.widget().adjustSize()
+
+        # Calculate position to center the browser container
+        container_pos_x = bc.x()
+        container_width = bc.width()
+        view_width = scroll_area.viewport().width()
+
+        # Centering calculation: we want the center of the browser container
+        # to align with the center of the viewport.
+        desired_scroll_value = (
+            container_pos_x + (container_width / 2) - (view_width / 2)
+        )
+
+        h_scrollbar = scroll_area.horizontalScrollBar()
+        # Ensure the desired value is within the scrollbar's range
+        desired_scroll_value = max(desired_scroll_value, h_scrollbar.minimum())
+        desired_scroll_value = min(desired_scroll_value, h_scrollbar.maximum())
+
+        # Scroll to the calculated position
+        h_scrollbar.setValue(int(desired_scroll_value))
+
+
 def main():
     app = QApplication(sys.argv)
-    window = SimpleBrowser()
+    window = Fasemo()
     window.show()
     sys.exit(app.exec())
+
 
 if __name__ == "__main__":
     main()
